@@ -1,0 +1,39 @@
+{
+  "name": "sparks-design-system",
+  "description": "Sparks Design System",
+  "version": "0.0.0",
+  "scripts": {
+    "postinstall": "node scripts/postinstall.js",
+    "version": "./node_modules/gulp/bin/gulp.js patternlab:version",
+    "help": "./node_modules/gulp/bin/gulp.js patternlab:help",
+    "patternsonly": "./node_modules/gulp/bin/gulp.js patternlab:patternsonly",
+    "connect": "./node_modules/gulp/bin/gulp.js patternlab:connect",
+    "build": "./node_modules/gulp/bin/gulp.js patternlab:build",
+    "watch": "./node_modules/gulp/bin/gulp.js patternlab:watch",
+    "serve": "./node_modules/gulp/bin/gulp.js patternlab:serve"
+  },
+  "keywords": [
+    "Sparks.Network",
+    "Design System",
+    "Pattern Lab",
+    "Atomic Web Design"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/SparksNetwork/sparks-design-system.git"
+  },
+  "bugs": "https://github.com/SparksNetwork/sparks-design-system/issues",
+  "author": "Frederik Krautwald <fkrautwald@sparks.network>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=5.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.0.0",
+    "gulp": "gulpjs/gulp#4.0",
+    "minimist": "^1.2.0",
+    "patternlab-node": "^2.0.0",
+    "styleguidekit-assets-default": "^3.0.0",
+    "styleguidekit-mustache-default": "^3.0.0"
+  }
+}

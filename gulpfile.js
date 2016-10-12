@@ -6,7 +6,8 @@
 var gulp = require('gulp'),
   path = require('path'),
   browserSync = require('browser-sync').create(),
-  argv = require('minimist')(process.argv.slice(2));
+  argv = require('minimist')(process.argv.slice(2)),
+  sass = require('gulp-sass');
 
 /******************************************************
  * COPY TASKS - stream assets from source to destination
@@ -58,6 +59,16 @@ gulp.task('pl-copy:styleguide-css', function(){
       return path.resolve(path.join(paths().public.styleguide, 'css'));
     }))
     .pipe(browserSync.stream());
+});
+
+/******************************************************
+ * SASS TASKS - compile sass
+******************************************************/
+// Sass compile
+gulp.task('sass', function(){
+  return gulp.src('**/*.scss', {cwd: path.resolve(paths().source.sass)})
+    .pipe(sass.sync().on('error', sass.logError))
+    .pipe(gulp.dest(path.resolve(paths().source.css)));
 });
 
 /******************************************************
@@ -121,7 +132,7 @@ gulp.task('patternlab:loadstarterkit', function (done) {
 });
 */
 
-gulp.task('patternlab:build', gulp.series('pl-assets', build, function(done){
+gulp.task('patternlab:build', gulp.series('sass', 'pl-assets', build, function(done){
   done();
 }));
 
@@ -148,6 +159,7 @@ function reloadCSS() {
 }
 
 function watch() {
+  gulp.watch(path.resolve(paths().source.sass, '**/*.scss'), { awaitWriteFinish: true }).on('change', gulp.series('sass'));
   gulp.watch(path.resolve(paths().source.css, '**/*.css'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:css', reloadCSS));
   gulp.watch(path.resolve(paths().source.styleguide, '**/*.*'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:styleguide', 'pl-copy:styleguide-css', reloadCSS));
 

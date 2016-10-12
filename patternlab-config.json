@@ -11,7 +11,8 @@
       "js" : "./source/assets/scripts",
       "images" : "./source/assets/images",
       "fonts" : "./source/assets/fonts",
-      "css" : "./source/assets/styles/"
+      "css" : "./source/assets/styles/",
+      "sass" : "./source/sass/"
     },
     "public" : {
       "root" : "./public/",

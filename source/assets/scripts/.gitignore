@@ -1,0 +1,10 @@
+# Keep only script files.
+
+# ignore everything...
+*
+
+# ...except .gitignore...
+!.gitignore
+
+# ...and all script files
+!**/*.js

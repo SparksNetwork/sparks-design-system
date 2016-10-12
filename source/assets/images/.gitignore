@@ -1,0 +1,14 @@
+# Keep only image files.
+
+# ignore everything...
+*
+
+# ...except .gitignore...
+!.gitignore
+
+# ...and all image files
+!**/*.jpg
+!**/*.jpeg
+!**/*.png
+!**/*.gif
+!**/*.svg

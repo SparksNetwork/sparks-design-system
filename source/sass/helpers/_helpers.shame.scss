@@ -1,0 +1,36 @@
+/// ========================================================================
+/// SHAME.CSS
+/// ========================================================================
+
+/**
+ * Rules of Shame
+ *
+ * 1. If it’s a hack, it goes here.
+ * 2. Document all hacks _fully_:
+ *     1. What part of the codebase does it relate to?
+ *     2. Why was this needed?
+ *     3. How does this fix it?
+ *     4. How might you fix it properly given more time?
+ * 3. Do not blame the developer; if they explained why they had to do it,
+ *    then their reasons are probably (hopefully) valid.
+ * 4. Try to clean shame.css up when you have some down time.
+ *     1. Even better, get a tech-debt story in which you can dedicate
+ *        actual sprint time to it.
+ */
+
+/**
+ * HTML5 hidden attribute fix.
+ *
+ * This hack relates to browser support for the HTML5 hidden attribute.
+ * The hack is needed to support otherwise unsupported browsers, such as
+ * IE 10, IE Mobile 10, and Blackberry Browser, and will work back to IE 6.
+ * By adding adding `hidden` as an attribute selector, we can hide the
+ * element with CSS when the browser doesn’t natively do it. The hack can
+ * safely be removed when the codebase shouldn’t support the unsupported
+ * browsers.
+ *
+ * Frederik Krautwald <fkrautwald@sparks.network>
+ */
+[hidden] {
+  display: none;
+}

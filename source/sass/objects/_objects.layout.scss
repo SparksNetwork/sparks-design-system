@@ -1,0 +1,26 @@
+/// ========================================================================
+/// LAYOUT
+/// ========================================================================
+
+.o-layout--horizontal,
+.o-layout--vertical {
+  display: flex;
+}
+
+.o-layout--horizontal {
+  flex-direction: row;
+}
+
+.o-layout--vertical {
+  flex-direction: column;
+}
+
+.o-layout--center,
+.o-layout--center-center {
+  align-items: center;
+}
+
+.o-layout--center-justified,
+.o-layout--center-center {
+  justify-content: center;
+}

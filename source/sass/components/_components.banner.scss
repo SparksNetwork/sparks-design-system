@@ -1,0 +1,32 @@
+/// ========================================================================
+/// BANNER
+/// ========================================================================
+
+.c-banner {
+  // Basic Box
+  margin: $unit-small auto;
+
+  // Text
+  text-align: center;
+}
+
+  .c-banner__title {
+    // Basic Box
+    margin-bottom: $unit;
+
+    // Fonts
+    @include typography-display-2(true);
+  }
+
+  .c-banner__subtitle {
+    // Fonts
+    @include typography-subheading-1();
+  }
+
+.c-banner--contrast {
+  & .c-banner__title,
+  & .c-banner__subtitle {
+    // Color
+    color: $color-white;
+  }
+}

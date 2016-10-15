@@ -1,0 +1,109 @@
+/// ========================================================================
+/// BUTTONS
+/// ========================================================================
+
+.c-btn {
+  // Color
+  color: $color-button-secondary;
+
+  // Background & Borders
+  background: transparent;
+  border: none;
+  border-radius: $global-radius;
+
+  // Basic Box
+  display: inline-flex;
+  margin: 0 $unit-tiny;
+  min-width: ($unit-large * 3);
+  overflow: hidden;
+  padding: round($unit-small * 1.25) $unit-small;
+  position: relative;
+  vertical-align: middle;
+  z-index: 0;
+
+  // Flexible Box Layout
+  justify-content: center;
+
+  // Text
+  letter-spacing: 0;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+
+  // Text Decoration
+  text-decoration: none;
+
+  // Fonts
+  font: inherit;
+  @include font-weight(medium);
+  @include rem(font-size, 14px);
+
+  // Basic User Interface
+  cursor: pointer;
+  outline-offset: 0;
+
+  // User Interaction
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+
+  &::-moz-focus-inner {
+  // Background & Borders
+    border: 0;
+  }
+
+  &:hover {
+    // Background & Borders
+    background-color: $color-button-primary;
+  }
+
+  &:focus:not(:active) {
+    // Background & Borders
+    background-color: $color-button-focus;
+  }
+
+  &:active {
+    // Background & Borders
+    background-color: $color-button-active;
+  }
+
+  &.c-btn--colored {
+    // Color
+    color: $color-button-primary-alt;
+
+    &:focus:not(:active) {
+      // Background & Borders
+      background-color: $color-button-focus-alt;
+    }
+  }
+}
+
+/// Colored buttons.
+
+.c-btn--primary {
+  // Color
+  color: $color-button-primary-alt;
+}
+
+.c-btn--submit {
+  // Color
+  color: $color-button-submit;
+}
+
+/// Federated buttons.
+
+.c-btn--google {
+  // Color
+  color: $color-white;
+
+  // Background and Borders
+  background-color: $color-google;
+}
+
+.c-btn--facebook {
+  // Color
+  color: $color-white;
+
+  // Background and Borders
+  background-color: $color-facebook;
+}

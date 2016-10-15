@@ -1,0 +1,41 @@
+/// ========================================================================
+/// APP
+/// ========================================================================
+
+html {
+  // Fonts
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  font-size: ($global-font-size / 16px) * 1em;
+  @include font-family('sans-serif');
+}
+
+body {
+  // Color
+  color: $color-app-text;
+
+  // Background & Borders
+  background: $color-app-background;
+
+  // Basic Box
+  display: flex;
+  @include ishus-replace-ios-viewport-unit( min-height, 100vh );
+  margin: 0;
+
+  // Flexible Box Layout
+  flex-direction: column;
+
+  // Text
+  line-height: $global-line-height / $global-font-size;
+  letter-spacing: normal;
+  text-size-adjust: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  // Basic Box
+  margin: 0;
+
+  // Fonts
+  @include rem(font-size, ($global-font-size * 1.25));
+}

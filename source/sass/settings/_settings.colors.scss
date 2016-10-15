@@ -1,0 +1,79 @@
+/// ========================================================================
+/// COLORS
+/// ========================================================================
+
+// Color palette.
+$color-brand-primary:               #4A1F50;
+$color-brand-primary-highlight:     lighten($color-brand-primary, 5%);
+$color-brand-primary-shadow:        darken($color-brand-primary,  5%);
+
+$color-brand-secondary:             #A48FA7;
+$color-brand-secondary-highlight:   lighten($color-brand-secondary, 5%);
+$color-brand-secondary-shadow:      darken($color-brand-secondary,  5%);
+
+$color-ui:                          #E4E4E4;
+
+$color-grey:                        #666;
+$color-grey-dark:                   #4A4A4A;
+$color-grey-light:                  #9B9B9B;
+$color-white:                       #FFF;
+$color-black:                       #000;
+$color-azul:                        #1778E9;
+$color-bright-orange:               #F76303;
+
+$color-primary:                     $color-brand-primary;
+$color-primary-contrast:            $color-white;
+
+// Federated colors.
+$color-google:                      #D14836;
+$color-facebook:                    #3B5998;
+
+
+
+
+
+// Theme colors.
+
+$color-theme-default:               #555;
+
+
+
+
+
+// Reassign litteral variables to meaningful ones.
+
+$color-app-text:                    $color-grey-dark;
+$color-app-background:              #ECE8ED;
+
+$color-logo:                        $color-brand-secondary;
+
+// Links.
+$color-links:                       $color-azul;
+$color-links-prose:                 $color-brand-primary;
+$color-links-prose-hover:           $color-brand-primary-shadow;
+
+// Masthead.
+$color-masthead-background:         $color-brand-primary;
+
+// Card.
+$color-card-text:                   $color-black;
+$color-card-background:             $color-white;
+$color-card-border:                 rgba($color-black, 0.1);
+
+// Default buttons.
+$color-button-primary:              rgba($color-grey-dark, 0.20);
+$color-button-secondary:            $color-black;
+$color-button-submit:               $color-azul;
+$color-button-hover:                $color-button-primary;
+$color-button-active:               rgba($color-grey-dark, 0.4);
+$color-button-focus:                rgba($color-black, 0.12);
+
+// Colored buttons.
+$color-button-primary-alt:          $color-primary;
+$color-button-secondary-alt:        $color-primary-contrast;
+$color-button-hover-alt:            $color-primary;
+$color-button-active-alt:           $color-primary;
+$color-button-focus-alt:            $color-button-focus;
+
+// Text fields.
+$color-text-field-border:           $color-grey-light;

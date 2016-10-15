@@ -1,0 +1,11 @@
+/// ========================================================================
+/// SETTINGS
+/// ========================================================================
+
+// Config................Configuration and development settings.
+// Global................Globally available variables and settings/config.
+// Colors................Manage color pallette in isolation.
+
+@import "settings.config";
+@import "settings.global";
+@import "settings.colors";

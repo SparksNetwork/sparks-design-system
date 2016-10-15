@@ -1,3 +1,336 @@
+@charset "UTF-8";
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * All..................No CSS produced.
+ *
+ * TOOLS
+ * All..................No CSS produced.
+ *
+ * GENERICS
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * ELEMENTS
+ * App..................App-level styles (HTML element).
+ * Images...............Base image styles.
+ *
+ * OBJECTS
+ * Wrappers.............Wrappers and app constraints.
+ * Layout...............Generic layout module.
+ * Main-content.........Main app content.
+ *
+ * COMPONENTS
+ * App-head.............App header styles.
+ * Logo.................Reusable logo component.
+ * Banner...............Banner styles.
+ * Headings.............Headings styles.
+ * Buttons..............Button styles.
+ * Text-fields..........Text field styles.
+ * Card.................Self-contained card with data.
+ * Sign-in..............Sign-in component.
+ *
+ * SCOPES
+ * Prose................Styling context for long-format text.
+ *
+ * THEMES
+ * Default..............Default theme for the app.
+ *
+ * HELPERS
+ * Headings.............Reassign heading styles to helper classes.
+ * Widths...............Width helper classes.
+ * Healthcheck..........Visual health-check tool.
+ * Debug................Highlight potential troublesome code.
+ * Shame.css............Short-term hacks and quick-fixes.
+ */
+/* from http://codepen.io/shyndman/pen/c5394ddf2e8b2a5c9185904b57421cdb */
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+html {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  font-size: 0.875em;
+  font-family: 'Open Sans', sans-serif; }
+
 body {
-  background: #fff;
-  color: #222; }
+  color: #4A4A4A;
+  background: #ECE8ED;
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  line-height: 1.42857;
+  letter-spacing: normal;
+  text-size-adjust: 100%; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    body {
+      min-height: 1024px; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+    body {
+      min-height: 768px; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 320px) and (device-height: 480px) and (orientation: portrait) {
+    body {
+      min-height: 480px; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
+    body {
+      min-height: 320px; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 320px) and (device-height: 568px) and (orientation: portrait) {
+    body {
+      min-height: 568px; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 320px) and (device-height: 568px) and (orientation: landscape) {
+    body {
+      min-height: 320px; } }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-size: 17.5px;
+  font-size: 1.25rem; }
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  font-style: italic; }
+
+.o-wrapper {
+  position: relative;
+  z-index: 2; }
+
+.o-layout--horizontal,
+.o-layout--vertical {
+  display: flex; }
+
+.o-layout--horizontal {
+  flex-direction: row; }
+
+.o-layout--vertical {
+  flex-direction: column; }
+
+.o-layout--center,
+.o-layout--center-center {
+  align-items: center; }
+
+.o-layout--center-justified,
+.o-layout--center-center {
+  justify-content: center; }
+
+.o-main-content {
+  padding: 0 8px 96px; }
+
+.c-app-head {
+  display: flex;
+  height: 72px;
+  padding: 0 8px;
+  align-items: center;
+  justify-content: space-between; }
+  .c-app-head.c-app-head--centered {
+    justify-content: center; }
+
+.c-logo {
+  color: #4A1F50;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-size: 1.71429rem;
+  font-weight: 700; }
+
+.c-logo__tld {
+  color: #A48FA7; }
+
+.c-logo--contrast {
+  color: #A48FA7; }
+  .c-logo--contrast .c-logo__tld {
+    color: #FFF; }
+
+.c-banner {
+  margin: 8px auto;
+  text-align: center; }
+
+.c-banner__title {
+  margin-bottom: 16px;
+  letter-spacing: -0.04em;
+  font-size: 45px;
+  font-size: 3.21429rem;
+  line-height: 1.06667;
+  font-weight: 400;
+  opacity: 0.54; }
+
+.c-banner__subtitle {
+  letter-spacing: 0.04em;
+  font-size: 16px;
+  font-size: 1.14286rem;
+  line-height: 1.5;
+  font-weight: 400; }
+
+.c-banner--contrast .c-banner__title,
+.c-banner--contrast .c-banner__subtitle {
+  color: #FFF; }
+
+.c-heading-banner {
+  font-weight: 300; }
+
+.c-btn {
+  color: #000;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  display: inline-flex;
+  margin: 0 4px;
+  min-width: 72px;
+  overflow: hidden;
+  padding: 10px 8px;
+  position: relative;
+  vertical-align: middle;
+  z-index: 0;
+  justify-content: center;
+  letter-spacing: 0;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline-offset: 0;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none; }
+  .c-btn::-moz-focus-inner {
+    border: 0; }
+  .c-btn:hover {
+    background-color: rgba(74, 74, 74, 0.2); }
+  .c-btn:focus:not(:active) {
+    background-color: rgba(0, 0, 0, 0.12); }
+  .c-btn:active {
+    background-color: rgba(74, 74, 74, 0.4); }
+  .c-btn.c-btn--colored {
+    color: #4A1F50; }
+    .c-btn.c-btn--colored:focus:not(:active) {
+      background-color: rgba(0, 0, 0, 0.12); }
+
+.c-btn--primary {
+  color: #4A1F50; }
+
+.c-btn--submit {
+  color: #1778E9; }
+
+.c-btn--google {
+  color: #FFF;
+  background-color: #D14836; }
+
+.c-btn--facebook {
+  color: #FFF;
+  background-color: #3B5998; }
+
+.c-text-field {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-size: 1.14286rem; }
+
+.c-text-field__input {
+  border: 2px solid #9B9B9B;
+  border-radius: 6px;
+  padding: 14px 22px;
+  width: 100%;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  font-size: inherit; }
+
+.c-card {
+  background-color: #FFF;
+  border-radius: 6px;
+  display: flex;
+  position: relative;
+  flex-direction: column; }
+  .c-card[data-elevation='0'] {
+    box-shadow: none; }
+  .c-card[data-elevation='1'] {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); }
+  .c-card[data-elevation='2'] {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 8px 0 rgba(0, 0, 0, 0.12), 0 3px 3px -2px rgba(0, 0, 0, 0.2); }
+  .c-card[data-elevation='3'] {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2); }
+  .c-card[data-elevation='4'] {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.2); }
+  .c-card[data-elevation='5'] {
+    box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2); }
+  .c-card[data-elevation='6'] {
+    box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2); }
+
+.c-card__header {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  overflow: hidden;
+  position: relative; }
+
+.c-card__title {
+  padding: 16px;
+  font-size: 24px;
+  font-size: 1.71429rem;
+  font-weight: 500; }
+
+.c-card__title--over-image {
+  bottom: 0;
+  position: absolute; }
+
+.c-card__title--contrast {
+  color: #FFF; }
+
+.c-card__content {
+  padding: 16px; }
+
+.c-card__supporting-text {
+  font-size: 14px;
+  font-size: 1rem; }
+
+.c-card__actions {
+  border-top: 1px solid #E4E4E4;
+  display: flex;
+  padding: 8px;
+  width: 100%; }
+
+.c-sign-in {
+  background-color: rgba(0, 0, 0, 0.54);
+  margin: 0 auto 16px;
+  width: 304px; }
+
+.c-sign-in__submit-btn {
+  background-color: #1778E9;
+  color: #FFF;
+  margin: 8px auto 0;
+  width: 100%; }
+
+/**
+ * Rules of Shame
+ *
+ * 1. If it’s a hack, it goes here.
+ * 2. Document all hacks _fully_:
+ *     1. What part of the codebase does it relate to?
+ *     2. Why was this needed?
+ *     3. How does this fix it?
+ *     4. How might you fix it properly given more time?
+ * 3. Do not blame the developer; if they explained why they had to do it,
+ *    then their reasons are probably (hopefully) valid.
+ * 4. Try to clean shame.css up when you have some down time.
+ *     1. Even better, get a tech-debt story in which you can dedicate
+ *        actual sprint time to it.
+ */
+/**
+ * HTML5 hidden attribute fix.
+ *
+ * This hack relates to browser support for the HTML5 hidden attribute.
+ * The hack is needed to support otherwise unsupported browsers, such as
+ * IE 10, IE Mobile 10, and Blackberry Browser, and will work back to IE 6.
+ * By adding adding `hidden` as an attribute selector, we can hide the
+ * element with CSS when the browser doesn’t natively do it. The hack can
+ * safely be removed when the codebase shouldn’t support the unsupported
+ * browsers.
+ *
+ * Frederik Krautwald <fkrautwald@sparks.network>
+ */
+[hidden] {
+  display: none; }

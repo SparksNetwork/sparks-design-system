@@ -1,0 +1,93 @@
+/// ========================================================================
+/// CARD
+/// ========================================================================
+
+.c-card {
+  // Background & Borders
+  background-color: $color-card-background;
+  border-radius: $global-radius;
+
+  // Basic Box
+  display: flex;
+  position: relative;
+
+  // Flexible Box Layout
+  flex-direction: column;
+
+  &[data-elevation='0'] {
+    @include elevate(0);
+  }
+
+  &[data-elevation='1'] {
+    @include elevate(1);
+  }
+
+  &[data-elevation='2'] {
+    @include elevate(2);
+  }
+
+  &[data-elevation='3'] {
+    @include elevate(3);
+  }
+
+  &[data-elevation='4'] {
+    @include elevate(4);
+  }
+
+  &[data-elevation='5'] {
+    @include elevate(5);
+  }
+
+  &[data-elevation='6'] {
+    @include elevate(6);
+  }
+}
+
+  .c-card__header {
+    // Background & Borders
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+
+    // Basic Box
+    overflow: hidden;
+    position: relative;
+  }
+
+  .c-card__title {
+    // Basic Box
+    padding: $unit;
+
+    // Fonts
+    @include typography-style('Title');
+  }
+
+  .c-card__title--over-image {
+    // Basic Box
+    bottom: 0;
+    position: absolute;
+  }
+
+  .c-card__title--contrast {
+    // Color
+    color: $color-primary-contrast;
+  }
+
+  .c-card__content {
+    // Basic Box
+    padding: $unit;
+  }
+
+  .c-card__supporting-text {
+    // Fonts
+    @include rem(font-size, 14px);
+  }
+
+  .c-card__actions {
+    // Background & Borders
+    border-top: 1px solid $color-ui;
+
+    // Basic Box
+    display: flex;
+    padding: $unit-small;
+    width: 100%;
+  }

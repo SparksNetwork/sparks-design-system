@@ -34,6 +34,7 @@
     "gulp": "gulpjs/gulp#4.0",
     "minimist": "^1.2.0",
     "patternlab-node": "^2.0.0",
+    "sass-mq": "^3.2.9",
     "styleguidekit-assets-default": "^3.0.0",
     "styleguidekit-mustache-default": "^3.0.0"
   },

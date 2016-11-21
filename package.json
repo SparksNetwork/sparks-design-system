@@ -29,8 +29,10 @@
     "postchangelog": "git add CHANGELOG.md && git commit -m 'chore(CHANGELOG): append to changelog' && git push origin master",
     "preversion": "npm run build",
     "postpublish": "npm run changelog",
+    "release-preminor": "np preminor",
     "release-minor": "np minor",
     "release-major": "np major",
+    "release-premajor": "np premajor",
     "release": "npm run release-minor"
   },
   "keywords": [

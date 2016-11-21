@@ -1,7 +1,8 @@
 {
   "name": "sparks-design-system",
   "description": "Sparks Design System",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "main": "src/sass/designsystem.scss",
   "scripts": {
     "postinstall": "node scripts/postinstall.js",
     "sass": "./node_modules/gulp/bin/gulp.js sass",

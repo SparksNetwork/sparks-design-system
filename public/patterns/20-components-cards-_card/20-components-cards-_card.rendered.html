@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="" lang="en">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+    <link rel="stylesheet" href="../../assets/styles/pattern-scaffolding.css?1479735452022" media="all" />
+
+    <!-- Begin Pattern Lab (Required for Pattern Lab to run properly) -->
+    <!-- never cache patterns -->
+<meta http-equiv="cache-control" content="max-age=0" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<link rel="stylesheet" href="../../styleguide/css/styleguide.min.css?1479735452022" media="all">
+<link rel="stylesheet" href="../../styleguide/css/prism-typeahead.min.css?1479735452022" media="all" />
+
+    <!-- End Pattern Lab -->
+
+    <link rel="stylesheet" href="../../assets/styles/designsystem.css?1479735452022" media="all" />
+
+  </head>
+  <body class="t-default">
+
+<div class="c-card"
+     data-elevation="1">
+
+  <header class="c-card__header">
+
+    <img class="c-card__media"
+         src="../../assets/images/dummy-650x366-Mosque-plain.jpg"
+         alt="Mosque plain">
+
+    <div class="c-card__title  c-card__title--over-image  c-card__title--contrast">
+      Mosque 16:9
+    </div>
+
+  </header>
+
+  <div class="c-card__content">
+    <strong>mosque definition</strong>
+    A Muslim house of worship with at least one minaret, a tall, slender tower with
+    balconies, used for calling the faithful to prayer.
+  </div>
+
+  <div class="c-card__actions">
+    <button class="c-btn">Share</button>
+    <button class="c-btn">Explore!</button>
+  </div>
+
+</div>
+  
+  <!--DO NOT REMOVE-->
+  <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
+  {"cssEnabled":false,"patternLineageExists":false,"patternLineages":[],"lineage":[],"patternLineageRExists":false,"patternLineagesR":[],"lineageR":[],"patternLineageEExists":false,"patternDesc":"","patternBreadcrumb":{"patternType":"components","patternSubtype":"cards"},"patternExtension":"mustache","patternName":"_card","patternPartial":"components-_card","patternState":"","patternEngineName":"mustache","extraOutput":{}}
+</script>
+
+<script>
+  /*!
+   * scriptLoader - v0.1
+   *
+   * Copyright (c) 2014 Dave Olsen, http://dmolsen.com
+   * Licensed under the MIT license
+   *
+   */
+  
+  var scriptLoader = {
+    
+    run: function(js,cb,target) {
+      var s  = document.getElementById(target+'-'+cb);
+      for (var i = 0; i < js.length; i++) {
+        var src = (typeof js[i] != 'string') ? js[i].src : js[i];
+        var c   = document.createElement('script');
+        c.src   = '../../'+src+'?'+cb;
+        if (typeof js[i] != 'string') {
+          if (js[i].dep !== undefined) {
+            c.onload = function(dep,cb,target) {
+              return function() {
+                scriptLoader.run(dep,cb,target);
+              }
+            }(js[i].dep,cb,target);
+          }
+        }
+        s.parentNode.insertBefore(c,s);
+      }
+    }
+    
+  }
+</script>
+
+<script id="pl-js-polyfill-insert-1479735452022">
+  (function() {
+    if (self != top) {
+      var cb = '1479735452022';
+      var js = [];
+      if (typeof document !== 'undefined' && !('classList' in document.documentElement)) {
+        js.push('styleguide/bower_components/classList.min.js');
+      }
+      scriptLoader.run(js,cb,'pl-js-polyfill-insert');
+    }
+  })();
+</script>
+
+<script id="pl-js-insert-1479735452022">
+  (function() {
+    if (self != top) {
+      var cb = '1479735452022';
+      var js = [ { 'src': 'styleguide/bower_components/jwerty.min.js', 'dep': [ 'styleguide/js/patternlab-pattern.min.js' ] } ];
+      scriptLoader.run(js,cb,'pl-js-insert');
+    }
+  })();
+</script>
+
+  
+  </body>
+</html>

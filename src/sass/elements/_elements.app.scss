@@ -12,19 +12,9 @@ html {
 }
 
 body {
-  // Color
-  color: $color-app-text;
-
-  // Background & Borders
-  background: $color-app-background;
-
   // Basic Box
-  display: flex;
   @include ishus-replace-ios-viewport-unit( min-height, 100vh );
   margin: 0;
-
-  // Flexible Box Layout
-  flex-direction: column;
 
   // Text
   line-height: $global-line-height / $global-font-size;

@@ -3,13 +3,13 @@
 /// ========================================================================
 
 html {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 
 * {
   &,
   &::after,
   &::before {
-    box-sizing: inherit;
+    box-sizing: content-box;
   }
 }

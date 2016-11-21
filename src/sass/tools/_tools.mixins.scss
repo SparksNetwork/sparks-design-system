@@ -12,3 +12,24 @@
   #{$property}: $value;
   #{$property}: rem($value);
 }
+
+// Layout mixin
+
+@mixin layout($modifier) {
+  @if ($modifier == 'inline') {
+    display: inline-flex;
+  }
+  @else if ($modifier == 'center') {
+    align-items: center;
+  }
+  @else if ($modifier == 'center-justified') {
+    justify-content: center;
+  }
+  @else if ($modifier == 'center-center') {
+    @include layout(center);
+    @include layout(center-justified);
+  }
+  @else {
+    display: flex;
+  }
+}

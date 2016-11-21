@@ -2,6 +2,10 @@
 /// LAYOUT
 /// ========================================================================
 
+.o-layout--inline {
+  display: inline-flex;
+}
+
 .o-layout--horizontal,
 .o-layout--vertical {
   display: flex;

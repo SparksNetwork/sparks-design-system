@@ -1,3 +1,13 @@
+<a name="0.4.0"></a>
+# [0.4.0](https://github.com/SparksNetwork/sparks-design-system/compare/v0.3.0...v0.4.0) (2016-11-21)
+
+
+### Bug Fixes
+
+* **npm:** remove scripts/ from .npmignore ([869e5f3](https://github.com/SparksNetwork/sparks-design-system/commit/869e5f3))
+
+
+
 <a name="0.3.0"></a>
 # [0.3.0](https://github.com/SparksNetwork/sparks-design-system/compare/v0.2.0...v0.3.0) (2016-11-21)
 

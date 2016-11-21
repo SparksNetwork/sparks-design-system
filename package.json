@@ -28,6 +28,7 @@
     "changelog": "conventional-changelog  --infile CHANGELOG.md --same-file --release-count 0 --preset angular",
     "postchangelog": "git add CHANGELOG.md && git commit -m 'chore(CHANGELOG): append to changelog' && git push origin master",
     "preversion": "npm run build",
+    "postversion": "git add --all && git commit -m 'chore(build): build for new version'",
     "postpublish": "npm run changelog",
     "release-preminor": "np preminor",
     "release-minor": "np minor",

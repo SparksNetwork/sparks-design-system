@@ -1,3 +1,8 @@
+<a name="0.3.0"></a>
+# [0.3.0](https://github.com/SparksNetwork/sparks-design-system/compare/v0.2.0...v0.3.0) (2016-11-21)
+
+
+
 <a name="0.2.0"></a>
 # [0.2.0](https://github.com/SparksNetwork/sparks-design-system/compare/v0.0.0...v0.2.0) (2016-11-21)
 

@@ -48,7 +48,7 @@ html {
   box-sizing: content-box; }
 
 *, *::after, *::before {
-  box-sizing: content-box; }
+  box-sizing: inherit; }
 
 html {
   font-style: normal;
@@ -139,20 +139,20 @@ img {
   padding: 0 20px;
   margin: 0 8px;
   min-width: 80px;
-  color: #fff; }
+  color: #ffffff; }
   .c-btn--primary {
     background-color: #f76303; }
   .c-btn--quiet {
     color: #f76303;
     background-color: #fddfcc; }
   .c-btn--negative {
-    color: #000;
-    background-color: #fff;
-    border: solid 2px #000;
+    color: #000000;
+    background-color: #ffffff;
+    border: solid 2px #000000;
     opacity: 0.5; }
   .c-btn--mini {
     height: 24px;
-    padding: 0 8px;
+    padding: 0 12px;
     font-size: 12px; }
   .c-btn--small {
     height: 32px;
@@ -163,8 +163,8 @@ img {
     padding: 0 24px;
     font-size: 18px; }
   .c-btn--huge {
-    height: 56px;
-    padding: 0 28px;
+    height: 64px;
+    padding: 0 32px;
     font-size: 20px; }
 
 /**

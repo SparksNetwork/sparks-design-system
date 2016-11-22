@@ -56,7 +56,16 @@
   border-radius: 5px;
 }
 
-.sg-label {
+.sg-label,
+.sg-details {
+  display: block;
   font-size: 90%;
-  line-height: 1;
+}
+
+.sg-label {
+  font-weight: 600;
+}
+
+.sg-details {
+  opacity: 0.7;
 }

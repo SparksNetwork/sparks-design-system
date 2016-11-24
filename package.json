@@ -1,7 +1,7 @@
 {
   "name": "sparks-design-system",
   "description": "Sparks Design System",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "main": "src/sass/designsystem.scss",
   "config": {
     "commitizen": {

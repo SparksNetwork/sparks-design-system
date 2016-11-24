@@ -3,11 +3,19 @@
  * styles for grids, animations, color swatches, etc.
  * These styles will not be your production CSS.
  */
+* {
+  box-sizing: content-box;
+}
+
 #sg-patterns {
   -webkit-box-sizing: border-box !important;
           box-sizing: border-box !important;
   max-width: 100%;
   padding: 0 0.5em;
+}
+
+.sg-pattern-category-body {
+  font-size: 100%;
 }
 
 .demo-animate {
@@ -48,7 +56,16 @@
   border-radius: 5px;
 }
 
-.sg-label {
+.sg-label,
+.sg-details {
+  display: block;
   font-size: 90%;
-  line-height: 1;
+}
+
+.sg-label {
+  font-weight: 600;
+}
+
+.sg-details {
+  opacity: 0.7;
 }

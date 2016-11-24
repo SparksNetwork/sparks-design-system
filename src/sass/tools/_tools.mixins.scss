@@ -19,8 +19,18 @@
   @if ($modifier == 'inline') {
     display: inline-flex;
   }
+  @else if ($modifier == 'vertical') {
+    @include layout('');
+    flex-direction: column;
+  }
+  @else if ($modifier == 'start') {
+    align-items: flex-start;
+  }
   @else if ($modifier == 'center') {
     align-items: center;
+  }
+  @else if ($modifier == 'start-justified') {
+    justify-content: flex-start;
   }
   @else if ($modifier == 'center-justified') {
     justify-content: center;

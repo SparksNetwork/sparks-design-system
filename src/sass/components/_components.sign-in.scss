@@ -1,0 +1,57 @@
+/// ========================================================================
+/// SIGN IN
+/// ========================================================================
+
+.c-sign-in {
+  @include layout('');
+  @include layout('center-center');
+  min-height: 100%;
+
+  &__form {
+    @include layout('vertical');
+    @include layout('center');
+    width: 100%;
+  }
+
+  &__title {
+    @include typography-title();
+    padding: 24px 16px;
+  }
+
+  &__list {
+    list-style: none;
+    margin: 16px 0;
+    padding: 0;
+
+    &-item {
+      margin-bottom: 16px;
+      text-align: center;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__password {
+    & .c-textfield__input {
+      padding-right: 64px;
+    }
+
+    &-forgot {
+      position: absolute;
+      top: 18px;
+      right: 8px;
+      line-height: 1;
+    }
+  }
+
+  &__submit {
+    width: 100%;
+  }
+
+  a {
+    color: $color-core-blueberry;
+    text-decoration: none;
+  }
+}

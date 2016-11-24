@@ -1,4 +1,12 @@
 {
   "bodyClass": "t-default",
-  "btnText": "Button text"
+  "btnText": "Button text",
+  "icon": {
+    "google": {
+      "src": "/assets/images/google.svg"
+    },
+    "facebook": {
+      "src": "/assets/images/facebook.svg"
+    }
+  }
 }

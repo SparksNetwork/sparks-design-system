@@ -7,7 +7,7 @@
   @include layout(center-center);
   position: relative;
   box-sizing: border-box;
-  background-color: #4a1f50;
+  background-color: $color-core-grape;
   font: inherit;
   font-size: 16px;
   font-weight: 600;
@@ -21,29 +21,28 @@
   z-index: 0;
   height: 40px;
   padding: 0 20px;
-  margin: 0 8px;
+  margin: 0;
   min-width: 80px;
-  color: #fff;
+  color: $color-core-rice;
 
   &--primary {
-    background-color: #f76303;
+    background-color: $color-core-mandarin;
   }
 
   &--quiet {
-    color: #f76303;
+    color: $color-core-mandarin;
     background-color: #fddfcc;
   }
 
   &--negative {
-    color: #000;
-    background-color: #fff;
-    border: solid 2px #000;
-    opacity: 0.5;
+    color: $color-core-liquorice-50;
+    background-color: $color-core-rice;
+    border: solid 2px $color-core-liquorice-50;
   }
 
   &--mini {
     height: 24px;
-    padding: 0 8px;
+    padding: 0 12px;
     font-size: 12px;
   }
 
@@ -60,8 +59,34 @@
   }
 
   &--huge {
-    height: 56px;
-    padding: 0 28px;
+    height: 64px;
+    padding: 0 32px;
     font-size: 20px;
+  }
+}
+
+.c-btn-federated {
+  @include layout(start-justified);
+  width: 220px;
+  text-align: left;
+  font-size: 14px;
+  padding: 0 16px;
+
+  &--facebook {
+    background-color: #3b5998;
+  }
+
+  &--google {
+    color: #757575;
+    background-color: #fff;
+  }
+
+  &__icon {
+    height: 18px;
+    width: 18px;
+  }
+
+  &__text {
+    padding-left: 16px;
   }
 }

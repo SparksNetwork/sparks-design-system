@@ -9,12 +9,15 @@ html {
   font-weight: 400;
   font-size: ($global-font-size / 16px) * 1em;
   @include font-family('sans-serif');
+
+  height: 100%;
 }
 
 body {
   // Basic Box
   @include ishus-replace-ios-viewport-unit( min-height, 100vh );
   margin: 0;
+  height: 100%;
 
   // Text
   line-height: $global-line-height / $global-font-size;
@@ -28,4 +31,12 @@ h1, h2, h3, h4, h5, h6 {
 
   // Fonts
   @include rem(font-size, ($global-font-size * 1.25));
+}
+
+#app {
+  @include ishus-replace-ios-viewport-unit( min-height, 100vh );
+  display: block;
+  position: relative;
+  height: 100%;
+  background-color: $color-core-sardine;
 }

@@ -1,3 +1,13 @@
+<a name="0.8.0"></a>
+# [0.8.0](https://github.com/SparksNetwork/sparks-design-system/compare/v0.7.0...v0.8.0) (2016-11-24)
+
+
+### Bug Fixes
+
+* **feature:** correct links on sign-in ([24f2a45](https://github.com/SparksNetwork/sparks-design-system/commit/24f2a45))
+
+
+
 <a name="0.7.0"></a>
 # [0.7.0](https://github.com/SparksNetwork/sparks-design-system/compare/v0.6.0...v0.7.0) (2016-11-24)
 

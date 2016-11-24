@@ -1,3 +1,15 @@
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/SparksNetwork/sparks-design-system/compare/v0.5.0...v0.6.0) (2016-11-24)
+
+
+### Features
+
+* **basics:** add color tints ([3e32f66](https://github.com/SparksNetwork/sparks-design-system/commit/3e32f66))
+* **basics:** add core colors ([fe1ed89](https://github.com/SparksNetwork/sparks-design-system/commit/fe1ed89))
+* **feature:** add sign-in ([3d5c2b9](https://github.com/SparksNetwork/sparks-design-system/commit/3d5c2b9))
+
+
+
 <a name="0.5.0"></a>
 # [0.5.0](https://github.com/SparksNetwork/sparks-design-system/compare/v0.4.0...v0.5.0) (2016-11-21)
 

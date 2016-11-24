@@ -1,0 +1,53 @@
+<div id="app">
+  <div class="c-sign-in">
+    <form class="c-sign-in__form">
+
+      <div class="c-sign-in__title">
+        Sign in to Sparks.Network
+      </div>
+
+      <ul class="c-sign-in__list">
+        <li class="c-sign-in__list-item">
+          <button class="c-btn  c-btn-federated  c-btn-federated--google">
+            <img class="c-btn-federated__icon" src={{ icon.google.src }}>
+            <span class="c-btn-federated__text">Sign in with Google</span>
+          </button>
+        </li>
+        <li class="c-sign-in__list-item">
+          <button class="c-btn  c-btn-federated  c-btn-federated--facebook">
+            <img class="c-btn-federated__icon" src={{ icon.facebook.src }}>
+            <span class="c-btn-federated__text">Sign in with Facebook</span>
+          </button>
+        </li>
+      </ul>
+
+      <ul class="c-sign-in__list">
+        <li class="c-sign-in__list-item">
+          <div class="c-textfield">
+            <label>
+              <input class="c-textfield__input" type="text" required>
+              <span class="c-textfield__label">Email address</span>
+            </label>
+          </div>
+        </li>
+        <li class="c-sign-in__list-item">
+          <div class="c-sign-in__password  c-textfield">
+            <label>
+              <input class="c-textfield__input" type="password" required>
+              <span class="c-textfield__label">Password</span>
+            </label>
+            <a class="c-sign-in__password-forgot" href="/cunt">Forgot?</a></span>
+          </div>
+        </li>
+        <li class="c-sign-in__list-item">
+          {{> basics-button(btnText: "Sign in", styleModifier: "c-btn--primary c-sign-in__submit") }}
+        </li>
+      </ul>
+
+      <div>
+        <a href="/you-cunt">New to Sparks.Network? Sign up</a>
+      </div>
+
+    </form>
+  </div>
+</div>

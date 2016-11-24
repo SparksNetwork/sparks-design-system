@@ -55,11 +55,13 @@ html {
   font-variant: normal;
   font-weight: 400;
   font-size: 0.875em;
-  font-family: 'Roboto', 'Noto', sans-serif; }
+  font-family: 'Roboto', 'Noto', sans-serif;
+  height: 100%; }
 
 body {
   min-height: 100vh;
   margin: 0;
+  height: 100%;
   line-height: 1.42857;
   letter-spacing: normal;
   text-size-adjust: 100%; }
@@ -86,6 +88,31 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-size: 17.5px;
   font-size: 1.25rem; }
+
+#app {
+  min-height: 100vh;
+  display: block;
+  position: relative;
+  height: 100%;
+  background-color: #eeeeee; }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 768px) and (device-height: 1024px) and (orientation: portrait) {
+    #app {
+      min-height: 1024px; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 768px) and (device-height: 1024px) and (orientation: landscape) {
+    #app {
+      min-height: 768px; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 320px) and (device-height: 480px) and (orientation: portrait) {
+    #app {
+      min-height: 480px; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 320px) and (device-height: 480px) and (orientation: landscape) {
+    #app {
+      min-height: 320px; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 320px) and (device-height: 568px) and (orientation: portrait) {
+    #app {
+      min-height: 568px; } }
+  @media only screen and (-webkit-min-device-pixel-ratio: 1) and (device-width: 320px) and (device-height: 568px) and (orientation: landscape) {
+    #app {
+      min-height: 320px; } }
 
 img {
   max-width: 100%;
@@ -137,7 +164,7 @@ img {
   z-index: 0;
   height: 40px;
   padding: 0 20px;
-  margin: 0 8px;
+  margin: 0;
   min-width: 80px;
   color: #ffffff; }
   .c-btn--primary {
@@ -146,10 +173,9 @@ img {
     color: #f76303;
     background-color: #fddfcc; }
   .c-btn--negative {
-    color: #000000;
+    color: rgba(0, 0, 0, 0.5);
     background-color: #ffffff;
-    border: solid 2px #000000;
-    opacity: 0.5; }
+    border: solid 2px rgba(0, 0, 0, 0.5); }
   .c-btn--mini {
     height: 24px;
     padding: 0 12px;
@@ -166,6 +192,92 @@ img {
     height: 64px;
     padding: 0 32px;
     font-size: 20px; }
+
+.c-btn-federated {
+  justify-content: flex-start;
+  width: 220px;
+  text-align: left;
+  font-size: 14px;
+  padding: 0 16px; }
+  .c-btn-federated--facebook {
+    background-color: #3b5998; }
+  .c-btn-federated--google {
+    color: #757575;
+    background-color: #fff; }
+  .c-btn-federated__icon {
+    height: 18px;
+    width: 18px; }
+  .c-btn-federated__text {
+    padding-left: 16px; }
+
+.c-textfield {
+  position: relative; }
+  .c-textfield__input {
+    display: inline-block;
+    color: #000000;
+    background-color: #ffffff;
+    border: solid 2px #9b9b9b;
+    border-radius: 6px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 220px;
+    padding: 12px 16px 0;
+    outline-width: 0;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    font-size: 14px; }
+    .c-textfield__input:focus {
+      border-color: #000000; }
+    .c-textfield__input:focus + .c-textfield__label, .c-textfield__input:valid + .c-textfield__label {
+      transform: translate(0, -50%) scale(0.75);
+      transform-origin: top left;
+      transition: transform 0.1s ease-in, color 0.1s ease-in;
+      font-style: normal; }
+  .c-textfield__label {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    color: #4a4a4a;
+    font-style: italic;
+    line-height: 1; }
+
+.c-sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%; }
+  .c-sign-in__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; }
+  .c-sign-in__title {
+    letter-spacing: 0.04em;
+    font-size: 20px;
+    font-size: 1.42857rem;
+    line-height: 1;
+    font-weight: 400;
+    padding: 24px 16px; }
+  .c-sign-in__list {
+    list-style: none;
+    margin: 16px 0;
+    padding: 0; }
+    .c-sign-in__list-item {
+      margin-bottom: 16px;
+      text-align: center; }
+      .c-sign-in__list-item:last-child {
+        margin-bottom: 0; }
+  .c-sign-in__password .c-textfield__input {
+    padding-right: 64px; }
+  .c-sign-in__password-forgot {
+    position: absolute;
+    top: 18px;
+    right: 8px;
+    line-height: 1; }
+  .c-sign-in__submit {
+    width: 100%; }
+  .c-sign-in a {
+    color: #1778ea;
+    text-decoration: none; }
 
 /**
  * Rules of Shame

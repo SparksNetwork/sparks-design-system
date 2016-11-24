@@ -26,8 +26,60 @@
 
 <body class="t-default">
 
-  <button class="c-btn c-btn--quiet c-btn--huge">Button text</button>
+  <div id="app">
+    <div class="c-sign-in">
+      <form class="c-sign-in__form">
 
+        <div class="c-sign-in__title">
+          Sign in to Sparks.Network
+        </div>
+
+        <ul class="c-sign-in__list">
+          <li class="c-sign-in__list-item">
+            <button class="c-btn  c-btn-federated  c-btn-federated--google">
+            <img class="c-btn-federated__icon" src=&#x2F;assets&#x2F;images&#x2F;google.svg>
+            <span class="c-btn-federated__text">Sign in with Google</span>
+          </button>
+          </li>
+          <li class="c-sign-in__list-item">
+            <button class="c-btn  c-btn-federated  c-btn-federated--facebook">
+            <img class="c-btn-federated__icon" src=&#x2F;assets&#x2F;images&#x2F;facebook.svg>
+            <span class="c-btn-federated__text">Sign in with Facebook</span>
+          </button>
+          </li>
+        </ul>
+
+        <ul class="c-sign-in__list">
+          <li class="c-sign-in__list-item">
+            <div class="c-textfield">
+              <label>
+              <input class="c-textfield__input" type="text" required>
+              <span class="c-textfield__label">Email address</span>
+            </label>
+            </div>
+          </li>
+          <li class="c-sign-in__list-item">
+            <div class="c-sign-in__password  c-textfield">
+              <label>
+              <input class="c-textfield__input" type="password" required>
+              <span class="c-textfield__label">Password</span>
+            </label>
+              <a class="c-sign-in__password-forgot" href="/cunt">Forgot?</a></span>
+            </div>
+          </li>
+          <li class="c-sign-in__list-item">
+            <button class="c-btn c-btn--primary  c-sign-in__submit">Sign in</button>
+
+          </li>
+        </ul>
+
+        <div>
+          <a href="/you-cunt">New to Sparks.Network? Sign up</a>
+        </div>
+
+      </form>
+    </div>
+  </div>
 
   <!--DO NOT REMOVE-->
   <script type="text/json" id="sg-pattern-data-footer" class="sg-pattern-data">
@@ -48,13 +100,13 @@
       "patternLineageEExists": true,
       "patternDesc": "",
       "patternBreadcrumb": {
-        "patternType": "basics",
-        "patternSubtype": "buttons"
+        "patternType": "features",
+        "patternSubtype": "identity-and-authentication"
       },
       "patternExtension": "mustache",
-      "patternName": "Quiet Button Huge",
-      "patternPartial": "basics-quiet-button-huge",
-      "patternState": "",
+      "patternName": "Sign In",
+      "patternPartial": "features-sign-in",
+      "patternState": "inprogress",
       "patternEngineName": "mustache",
       "extraOutput": {}
     }

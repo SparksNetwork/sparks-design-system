@@ -21,9 +21,9 @@
   z-index: 0;
   height: 40px;
   padding: 0 20px;
-  margin: 0 8px;
+  margin: 0;
   min-width: 80px;
-  color: $color-neutral-white;
+  color: $color-core-rice;
 
   &--primary {
     background-color: $color-core-mandarin;
@@ -35,10 +35,9 @@
   }
 
   &--negative {
-    color: $color-core-liquorice;
-    background-color: $color-neutral-white;
-    border: solid 2px $color-core-liquorice;
-    opacity: 0.5;
+    color: $color-core-liquorice-50;
+    background-color: $color-core-rice;
+    border: solid 2px $color-core-liquorice-50;
   }
 
   &--mini {
@@ -63,5 +62,31 @@
     height: 64px;
     padding: 0 32px;
     font-size: 20px;
+  }
+}
+
+.c-btn-federated {
+  @include layout(start-justified);
+  width: 220px;
+  text-align: left;
+  font-size: 14px;
+  padding: 0 16px;
+
+  &--facebook {
+    background-color: #3b5998;
+  }
+
+  &--google {
+    color: #757575;
+    background-color: #fff;
+  }
+
+  &__icon {
+    height: 18px;
+    width: 18px;
+  }
+
+  &__text {
+    padding-left: 16px;
   }
 }

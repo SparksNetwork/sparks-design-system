@@ -3,10 +3,10 @@
   "btnText": "Button text",
   "icon": {
     "google": {
-      "src": "/assets/images/google.svg"
+      "src": "../../assets/images/google.svg"
     },
     "facebook": {
-      "src": "/assets/images/facebook.svg"
+      "src": "../../assets/images/facebook.svg"
     }
   }
 }

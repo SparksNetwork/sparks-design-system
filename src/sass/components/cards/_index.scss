@@ -1,0 +1,35 @@
+/// ========================================================================
+/// COMPONENTS CARDS
+/// ========================================================================
+
+.c-card {
+  @include box($theme: alt, $padding: 0);
+
+  /// TODO: move to utility class
+  box-shadow: $shadow-elevation-2dp;
+
+  width: 100%;
+  max-width: 300px;
+
+  & + .c-card {
+    margin-top: $spacing-medium;
+  }
+
+  &__header,
+  &__footer {
+    padding-top: $spacing-medium;
+    padding-right: $spacing-medium;
+    padding-left: $spacing-medium;
+    margin-bottom: $spacing-medium;
+  }
+
+  &__body--inner {
+    padding-right: $spacing-medium;
+    padding-left: $spacing-medium;
+  }
+
+  &__body:empty,
+  &__footer:empty {
+    display: none;
+  }
+}

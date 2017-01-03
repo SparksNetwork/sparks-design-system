@@ -1,0 +1,24 @@
+/// ========================================================================
+/// STYLEGUIDE
+/// ========================================================================
+
+
+
+
+@import
+
+  'design-tokens',
+  'config',
+
+  /// Dependencies
+  'dependencies/index',
+
+  /// Styleguide
+  'styleguide/index';
+
+#app-container {
+  background-color: $sardine;
+  display: block;
+  position: relative;
+  height: 100%;
+}

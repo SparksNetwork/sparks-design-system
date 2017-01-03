@@ -1,12 +1,25 @@
 {
   "bodyClass": "t-default",
   "btnText": "Button text",
-  "icon": {
-    "google": {
-      "src": "../../assets/images/google.svg"
+  "icons": {
+    "social": {
+      "facebook2": {
+        "svg": "../../assets/icons/social-sprite/svg/symbols.svg#facebook2"
+      },
+      "google2": {
+        "svg": "../../assets/icons/social-sprite/svg/symbols.svg#google2"
+      }
     },
-    "facebook": {
-      "src": "../../assets/images/facebook.svg"
+    "utility": {
+      "check": {
+        "svg": "../../assets/icons/utility-sprite/svg/symbols.svg#check"
+      },
+      "download": {
+        "svg": "../../assets/icons/utility-sprite/svg/symbols.svg#download"
+      },
+      "switch": {
+        "svg": "../../assets/icons/utility-sprite/svg/symbols.svg#switch"
+      }
     }
   }
 }

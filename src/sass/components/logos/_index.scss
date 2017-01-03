@@ -1,0 +1,15 @@
+/// ========================================================================
+/// COMPONENTS LOGOS
+/// ========================================================================
+
+.c-logo {
+  color: $grape;
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-large-headline;
+  line-height: $line-height-large-headline;
+  letter-spacing: $letter-spacing-large-headline;
+
+  &__tld {
+    color: $grape-casper;
+  }
+}

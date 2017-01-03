@@ -1,0 +1,9 @@
+/// ========================================================================
+/// UTILITIES SCROLLABLE BASE
+/// ========================================================================
+
+.u-scrollable {
+  @include scrollbar;
+  @include enable-ios-momentum-scrolling;
+  overflow: auto;
+}

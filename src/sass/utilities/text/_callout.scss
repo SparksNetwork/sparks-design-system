@@ -1,0 +1,46 @@
+/// ========================================================================
+/// UTILITIES TEXT CALLOUT
+/// ========================================================================
+
+.u-text-callout {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-x-small-callout;
+  line-height: $line-height-x-small-callout;
+  letter-spacing: $letter-spacing-x-small-callout;
+
+  @include mq-small-min {
+    font-size: $font-size-small-callout;
+    line-height: $line-height-small-callout;
+    letter-spacing: $letter-spacing-small-callout;
+  }
+
+  @include mq-medium-min {
+    font-size: $font-size-medium-callout;
+    line-height: $line-height-medium-callout;
+    letter-spacing: $letter-spacing-medium-callout;
+  }
+
+  @include mq-large-min {
+    font-size: $font-size-large-callout;
+    line-height: $line-height-large-callout;
+    letter-spacing: $letter-spacing-large-callout;
+  }
+
+  @include mq-x-large-min {
+    font-size: $font-size-x-large-callout;
+    line-height: $line-height-x-large-callout;
+    letter-spacing: $letter-spacing-x-large-callout;
+  }
+
+  @include mq-xx-large-min {
+    font-size: $font-size-xx-large-callout;
+    line-height: $line-height-xx-large-callout;
+    letter-spacing: $letter-spacing-xx-large-callout;
+  }
+
+  @include mq-xxx-large-min {
+    font-size: $font-size-xxx-large-callout;
+    line-height: $line-height-xxx-large-callout;
+    letter-spacing: $letter-spacing-xxx-large-callout;
+  }
+}

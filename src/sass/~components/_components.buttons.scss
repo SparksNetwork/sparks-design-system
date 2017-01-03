@@ -1,0 +1,92 @@
+/// ========================================================================
+/// BUTTONS
+/// ========================================================================
+
+.c-btn {
+  @include layout(inline);
+  @include layout(center-center);
+  position: relative;
+  box-sizing: border-box;
+  background-color: $color-core-grape;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1;
+  outline-width: 0;
+  border: none;
+  border-radius: 6px;
+  user-select: none;
+  cursor: pointer;
+  z-index: 0;
+  height: 40px;
+  padding: 0 20px;
+  margin: 0;
+  min-width: 80px;
+  color: $color-core-rice;
+
+  &--primary {
+    background-color: $color-core-mandarin;
+  }
+
+  &--quiet {
+    color: $color-core-mandarin;
+    background-color: #fddfcc;
+  }
+
+  &--negative {
+    color: $color-core-liquorice-50;
+    background-color: $color-core-rice;
+    border: solid 2px $color-core-liquorice-50;
+  }
+
+  &--mini {
+    height: 24px;
+    padding: 0 12px;
+    font-size: 12px;
+  }
+
+  &--small {
+    height: 32px;
+    padding: 0 16px;
+    font-size: 14px;
+  }
+
+  &--large {
+    height: 48px;
+    padding: 0 24px;
+    font-size: 18px;
+  }
+
+  &--huge {
+    height: 64px;
+    padding: 0 32px;
+    font-size: 20px;
+  }
+}
+
+.c-btn-federated {
+  @include layout(start-justified);
+  width: 234px;
+  text-align: left;
+  font-size: 14px;
+  padding: 0 16px;
+
+  &--facebook {
+    background-color: #3b5998;
+  }
+
+  &--google {
+    color: #757575;
+    background-color: #fff;
+  }
+
+  &__icon {
+    height: 18px;
+    width: 18px;
+  }
+
+  &__text {
+    padding-left: 16px;
+  }
+}

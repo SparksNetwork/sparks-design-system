@@ -1,0 +1,124 @@
+/// ========================================================================
+/// DEPENDENCIES BUTTONS
+/// ========================================================================
+
+@mixin button {
+  padding: {
+    left: $spacing-medium;
+    right: $spacing-medium;
+  };
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+@mixin button-base {
+  border: solid $border-width-thin $color-border-button-default;
+
+  &:hover,
+  &:focus {
+    background-color: $color-background-button-default-hover;
+  }
+
+  &:active {
+    background-color: $color-background-button-default-active;
+  }
+}
+
+
+
+@mixin button-brand {
+  background-color: $color-background-button-brand;
+  border: solid $border-width-thin $color-border-button-brand;
+  color: $color-text-button-brand;
+
+  &:link,
+  &:visited,
+  &:active {
+    color: $color-text-button-brand;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-background-button-brand-hover;
+    color: $color-text-button-brand-hover;
+  }
+
+  &:active {
+    background-color: $color-background-button-brand-active;
+  }
+}
+
+
+
+@mixin button-google {
+  background-color: $color-background-button-google;
+  border: solid $border-width-thin $color-border-button-google;
+  color: $color-text-button-google;
+
+  &:link,
+  &:visited,
+  &:active {
+    color: $color-text-button-google;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-background-button-google-hover;
+    color: $color-text-button-google-hover;
+  }
+
+  &:active {
+    background-color: $color-background-button-google-active;
+  }
+}
+
+
+
+@mixin button-facebook {
+  background-color: $color-background-button-facebook;
+  border: solid $border-width-thin $color-border-button-facebook;
+  color: $color-text-button-facebook;
+
+  &:link,
+  &:visited,
+  &:active {
+    color: $color-text-button-facebook;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-background-button-facebook-hover;
+    color: $color-text-button-facebook-hover;
+  }
+
+  &:active {
+    background-color: $color-background-button-facebook-active;
+  }
+}
+
+
+
+@mixin button-destructive {
+  background-color: $color-background-button-destructive;
+  border: solid $border-width-thin $color-border-button-destructive;
+  color: $color-text-button-destructive;
+
+  &:link,
+  &:visited,
+  &:active {
+    color: $color-text-button-destructive;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-background-button-destructive-hover;
+    color: $color-text-button-destructive-hover;
+  }
+
+  &:active {
+    background-color: $color-background-button-destructive-active;
+    border-color: $color-border-button-destructive-active;
+  }
+}

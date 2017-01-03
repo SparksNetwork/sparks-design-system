@@ -1,0 +1,98 @@
+/// ========================================================================
+/// STYLEGUIDE DESIGN TOKENS
+/// ========================================================================
+
+.sg-design-tokens {
+
+  code {
+    padding: 0;
+    background: none;
+    white-space: normal;
+  }
+
+  thead th {
+    border-bottom: solid $border-width-thin $color-border;
+  }
+
+  tr > td:first-child {
+    @include mq-medium-min {
+      width: 30%;
+    }
+  }
+
+  td {
+    font-size: $font-size-small;
+
+    @include mq-medium-min {
+      width: 20%;
+    }
+  }
+
+  tr > td {
+    white-space: normal;
+  }
+
+  &.background-color {
+
+    td.token > div {
+      height: 2rem;
+      box-shadow: $color-background-alt 0 1px 0 inset,
+                  $color-background-alt 0 -1px 0 inset;
+      border: {
+        top: solid $border-width-thin $color-border;
+        bottom: solid $border-width-thin $color-border;
+        left: solid $border-width-thin $color-border;
+      }
+    }
+
+    @include mq-small-max {
+      td.token {
+        > div {
+          border: solid $border-width-thin $color-border;
+          box-shadow: $color-background-alt 0 0 0 1px inset;
+        }
+
+        code {
+          display: block;
+          clear: both;
+        }
+      }
+
+      tr > td:first-child {
+        border-top: solid $border-width-thin $color-border;
+      }
+    }
+
+    @include mq-medium-min {
+      td.token {
+        vertical-align: top;
+        padding: {
+          top: $spacing-small;
+          bottom: $spacing-small;
+        }
+
+        code {
+          display: inline-block;
+          padding: $spacing-xx-small 0;
+        }
+      }
+
+      tr > td:first-child ~ td[data-label="small"] > div {
+        box-shadow: $color-background-alt 0 1px 0 inset,
+                    $color-background-alt 0 -1px 0 inset,
+                    $color-background-alt 1px 0 0 inset;
+        border-left: solid $border-width-thin $color-border;
+        border-radius: $border-radius-medium 0 0 $border-radius-medium;
+      }
+
+      tr > td:first-child ~ td:last-child > div {
+        box-shadow: $color-background-alt 0 1px 0 inset,
+                    $color-background-alt 0 -1px 0 inset,
+                    $color-background-alt -1px 0 0 inset;
+        border-right: solid $border-width-thin $color-border;
+        border-radius: 0 $border-radius-medium $border-radius-medium 0;
+      }
+    }
+  }
+
+}

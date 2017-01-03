@@ -1,0 +1,132 @@
+/// ========================================================================
+/// UTILITIES TEXT TITLE
+/// ========================================================================
+
+.u-text-title--large {
+  font-weight: $font-weight-light;
+  font-size: $font-size-x-small-title-large;
+  line-height: $line-height-x-small-title-large;
+  letter-spacing: $letter-spacing-x-small-title-large;
+
+  @include mq-small-min {
+    font-size: $font-size-small-title-large;
+    line-height: $line-height-small-title-large;
+    letter-spacing: $letter-spacing-small-title-large;
+  }
+
+  @include mq-medium-min {
+    font-size: $font-size-medium-title-large;
+    line-height: $line-height-medium-title-large;
+    letter-spacing: $letter-spacing-medium-title-large;
+  }
+
+  @include mq-large-min {
+    font-size: $font-size-large-title-large;
+    line-height: $line-height-large-title-large;
+    letter-spacing: $letter-spacing-large-title-large;
+  }
+
+  @include mq-x-large-min {
+    font-size: $font-size-x-large-title-large;
+    line-height: $line-height-x-large-title-large;
+    letter-spacing: $letter-spacing-x-large-title-large;
+  }
+
+  @include mq-xx-large-min {
+    font-size: $font-size-xx-large-title-large;
+    line-height: $line-height-xx-large-title-large;
+    letter-spacing: $letter-spacing-xx-large-title-large;
+  }
+
+  @include mq-xxx-large-min {
+    font-size: $font-size-xxx-large-title-large;
+    line-height: $line-height-xxx-large-title-large;
+    letter-spacing: $letter-spacing-xxx-large-title-large;
+  }
+}
+
+.u-text-title--medium {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-x-small-title-medium;
+  line-height: $line-height-x-small-title-medium;
+  letter-spacing: $letter-spacing-x-small-title-medium;
+
+  @include mq-small-min {
+    font-size: $font-size-small-title-medium;
+    line-height: $line-height-small-title-medium;
+    letter-spacing: $letter-spacing-small-title-medium;
+  }
+
+  @include mq-medium-min {
+    font-size: $font-size-medium-title-medium;
+    line-height: $line-height-medium-title-medium;
+    letter-spacing: $letter-spacing-medium-title-medium;
+  }
+
+  @include mq-large-min {
+    font-size: $font-size-large-title-medium;
+    line-height: $line-height-large-title-medium;
+    letter-spacing: $letter-spacing-large-title-medium;
+  }
+
+  @include mq-x-large-min {
+    font-size: $font-size-x-large-title-medium;
+    line-height: $line-height-x-large-title-medium;
+    letter-spacing: $letter-spacing-x-large-title-medium;
+  }
+
+  @include mq-xx-large-min {
+    font-size: $font-size-xx-large-title-medium;
+    line-height: $line-height-xx-large-title-medium;
+    letter-spacing: $letter-spacing-xx-large-title-medium;
+  }
+
+  @include mq-xxx-large-min {
+    font-size: $font-size-xxx-large-title-medium;
+    line-height: $line-height-xxx-large-title-medium;
+    letter-spacing: $letter-spacing-xxx-large-title-medium;
+  }
+}
+
+.u-text-title--small {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-x-small-title-small;
+  line-height: $line-height-x-small-title-small;
+  letter-spacing: $letter-spacing-x-small-title-small;
+
+  @include mq-small-min {
+    font-size: $font-size-small-title-small;
+    line-height: $line-height-small-title-small;
+    letter-spacing: $letter-spacing-small-title-small;
+  }
+
+  @include mq-medium-min {
+    font-size: $font-size-medium-title-small;
+    line-height: $line-height-medium-title-small;
+    letter-spacing: $letter-spacing-medium-title-small;
+  }
+
+  @include mq-large-min {
+    font-size: $font-size-large-title-small;
+    line-height: $line-height-large-title-small;
+    letter-spacing: $letter-spacing-large-title-small;
+  }
+
+  @include mq-x-large-min {
+    font-size: $font-size-x-large-title-small;
+    line-height: $line-height-x-large-title-small;
+    letter-spacing: $letter-spacing-x-large-title-small;
+  }
+
+  @include mq-xx-large-min {
+    font-size: $font-size-xx-large-title-small;
+    line-height: $line-height-xx-large-title-small;
+    letter-spacing: $letter-spacing-xx-large-title-small;
+  }
+
+  @include mq-xxx-large-min {
+    font-size: $font-size-xxx-large-title-small;
+    line-height: $line-height-xxx-large-title-small;
+    letter-spacing: $letter-spacing-xxx-large-title-small;
+  }
+}

@@ -10,6 +10,7 @@
       "patternlabFiles" : "./node_modules/styleguidekit-mustache-default/views/",
       "js" : "./src/assets/scripts",
       "images" : "./src/assets/images",
+      "icons": "./src/assets/icons",
       "fonts" : "./src/assets/fonts",
       "css" : "./src/assets/styles/",
       "sass" : "./src/sass/"
@@ -22,6 +23,7 @@
       "styleguide" : "./public/styleguide/",
       "js" : "./public/assets/scripts",
       "images" : "./public/assets/images",
+      "icons": "./public/assets/icons",
       "fonts" : "./public/assets/fonts",
       "css" : "./public/assets/styles"
     }

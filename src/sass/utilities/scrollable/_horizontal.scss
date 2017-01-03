@@ -1,0 +1,12 @@
+/// ========================================================================
+/// UTILITIES SCROLLABLE HORIZONTAL
+/// ========================================================================
+
+.u-scrollable--x {
+  @include scrollbar;
+  @include enable-ios-momentum-scrolling;
+  max-width: 100%;
+  overflow: hidden {
+    x: auto;
+  };
+}

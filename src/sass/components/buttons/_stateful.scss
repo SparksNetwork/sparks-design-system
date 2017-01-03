@@ -1,0 +1,48 @@
+/// ========================================================================
+/// COMPONENTS BUTTONS STATEFUL
+/// ========================================================================
+
+.c-button--neutral.is-selected {
+  border-color: transparent;
+  background-color: transparent;
+
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
+    border: solid $border-width-thin $color-border-button-default;
+    background-color: $color-background-button-default-hover;
+  }
+
+  &:active {
+    background-color: $color-background-button-default-active;
+  }
+}
+
+/// Icon modifier for stateful buttons.
+.c-button__icon--stateful {
+  @include square($square-icon-small-content);
+  fill: currentColor;
+}
+
+/// Inverse Button
+.c-button--inverse.is-selected {
+  border-color: transparent;
+}
+
+/// Show/hide text based on interaction.
+.text-not-selected,
+.text-selected,
+.text-selected-focus,
+.is-selected[disabled]:hover .text-selected,
+.is-selected[disabled]:focus .text-selected {
+  display: block;
+}
+
+.not-selected .text-selected,
+.not-selected .text-selected-focus,
+.is-selected .text-not-selected,
+.is-selected:not(:hover):not(:focus) .text-selected-focus,
+.is-selected[disabled]:hover .text-selected-focus,
+.is-selected:hover .text-selected,
+.is-selected:focus .text-selected {
+  display: none;
+}

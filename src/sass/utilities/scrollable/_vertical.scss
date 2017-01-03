@@ -1,0 +1,12 @@
+/// ========================================================================
+/// UTILITIES SCROLLABLE VERTICAL
+/// ========================================================================
+
+.u-scrollable--y {
+  @include scrollbar;
+  @include enable-ios-momentum-scrolling;
+  max-height: 100%;
+  overflow: hidden {
+    y: auto;
+  };
+}

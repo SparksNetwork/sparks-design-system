@@ -1,0 +1,89 @@
+.sg-main {
+  padding: 1.5rem; }
+  .sg-main code {
+    color: #000; }
+
+.sg-pattern-category-body {
+  font-size: 1rem;
+  line-height: 1.42857; }
+  .sg-pattern-category-body > p {
+    margin-bottom: 0.75rem; }
+
+.sg-pattern-desc p {
+  margin-bottom: 0.75rem; }
+
+.sg-pattern-desc td {
+  padding: 0.25rem 0; }
+
+.sg-pattern-desc td {
+  vertical-align: top; }
+  .sg-pattern-desc td:first-child {
+    white-space: nowrap;
+    width: 1px;
+    padding-right: 0.25rem; }
+
+.sg-pattern-extra.active {
+  max-height: 100%; }
+
+.sg-design-tokens code {
+  padding: 0;
+  background: none;
+  white-space: normal; }
+
+.sg-design-tokens thead th {
+  border-bottom: solid 1px #DAE0E8; }
+
+@media (min-width: 48em) {
+  .sg-design-tokens tr > td:first-child {
+    width: 30%; } }
+
+.sg-design-tokens td {
+  font-size: 0.9375rem; }
+  @media (min-width: 48em) {
+    .sg-design-tokens td {
+      width: 20%; } }
+
+.sg-design-tokens tr > td {
+  white-space: normal; }
+
+.sg-design-tokens.background-color td.token > div {
+  height: 2rem;
+  box-shadow: #FFF 0 1px 0 inset, #FFF 0 -1px 0 inset;
+  border-top: solid 1px #DAE0E8;
+  border-bottom: solid 1px #DAE0E8;
+  border-left: solid 1px #DAE0E8; }
+
+@media (max-width: 30em) {
+  .sg-design-tokens.background-color td.token > div {
+    border: solid 1px #DAE0E8;
+    box-shadow: #FFF 0 0 0 1px inset; }
+  .sg-design-tokens.background-color td.token code {
+    display: block;
+    clear: both; }
+  .sg-design-tokens.background-color tr > td:first-child {
+    border-top: solid 1px #DAE0E8; } }
+
+@media (min-width: 48em) {
+  .sg-design-tokens.background-color td.token {
+    vertical-align: top;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; }
+    .sg-design-tokens.background-color td.token code {
+      display: inline-block;
+      padding: 0.25rem 0; }
+  .sg-design-tokens.background-color tr > td:first-child ~ td[data-label="small"] > div {
+    box-shadow: #FFF 0 1px 0 inset, #FFF 0 -1px 0 inset, #FFF 1px 0 0 inset;
+    border-left: solid 1px #DAE0E8;
+    border-radius: 0.25rem 0 0 0.25rem; }
+  .sg-design-tokens.background-color tr > td:first-child ~ td:last-child > div {
+    box-shadow: #FFF 0 1px 0 inset, #FFF 0 -1px 0 inset, #FFF -1px 0 0 inset;
+    border-right: solid 1px #DAE0E8;
+    border-radius: 0 0.25rem 0.25rem 0; } }
+
+#app-container {
+  background-color: #E5E5E5;
+  display: block;
+  position: relative;
+  height: 100%; }
+
+/*# sourceMappingURL=styleguide.css.map */

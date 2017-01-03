@@ -2,79 +2,22 @@
 /// DESIGN SYSTEM
 /// ========================================================================
 
-/**
- * CONTENTS
- *
- * SETTINGS
- * All..................No CSS produced.
- *
- * TOOLS
- * All..................No CSS produced.
- *
- * GENERICS
- * Box-sizing...........Better default `box-sizing`.
- *
- * ELEMENTS
- * App..................App-level styles (HTML element).
- * Images...............Base image styles.
- *
- * OBJECTS
- * Wrappers.............Wrappers and app constraints.
- * Layout...............Generic layout module.
- * Main-content.........Main app content.
- *
- * COMPONENTS
- * App-head.............App header styles.
- * Logo.................Reusable logo component.
- * Banner...............Banner styles.
- * Headings.............Headings styles.
- * Buttons..............Button styles.
- * Text-fields..........Text field styles.
- * Card.................Self-contained card with data.
- * Sign-in..............Sign-in component.
- *
- * SCOPES
- * Prose................Styling context for long-format text.
- *
- * THEMES
- * Default..............Default theme for the app.
- *
- * HELPERS
- * Headings.............Reassign heading styles to helper classes.
- * Widths...............Width helper classes.
- * Healthcheck..........Visual health-check tool.
- * Debug................Highlight potential troublesome code.
- * Shame.css............Short-term hacks and quick-fixes.
- */
 
 
 
-/// SETTINGS
-@import "settings/all";
+@import
 
-/// TOOLS
-@import "tools/all";
+  /// Dependencies
+  'design-tokens',
+  'config',
+  'deprecate',
+  'dependencies/index',
+  'core/font',
 
-/// GENERICS
-@import "generics/generics.box-sizing";
+  /// Reset
+  'vendor/normalize',
+  'core/core',
 
-/// ELEMENTS
-@import "elements/elements.app";
-@import "elements/elements.images";
-
-/// OBJECTS
-@import "objects/objects.wrappers";
-@import "objects/objects.layout";
-// @import "objects/objects.main-content.scss";
-
-/// COMPONENTS
-@import "components/components.buttons";
-@import "components/components.textfields";
-@import "components/components.sign-in";
-
-/// SCOPES
-
-/// THEMES
-
-/// HELPERS
-@import "helpers/helpers.shame"
+  /// Framework
+  'components/index',
+  'utilities/index';

@@ -1,0 +1,17 @@
+/// ========================================================================
+/// COMPONENTS BUTTONS FEDERATED
+/// ========================================================================
+
+.c-button--google {
+  @include button;
+  @include button-google;
+
+  font-weight: $font-weight-semi-bold;
+}
+
+.c-button--facebook {
+  @include button;
+  @include button-facebook;
+
+  font-weight: $font-weight-semi-bold;
+}

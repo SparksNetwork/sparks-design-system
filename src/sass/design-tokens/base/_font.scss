@@ -1,0 +1,309 @@
+/// ========================================================================
+/// DESIGN TOKENS FONT
+/// ========================================================================
+
+$font-family: 'Open Sans', Arial, sans-serif;
+
+$font-weight-light: 300;
+/// Use for large headings only.
+
+$font-weight-regular: 400;
+/// Most all body copy.
+
+$font-weight-semi-bold: 600;
+
+$font-weight-bold: 700;
+/// Used sparingly for emphasized text within regular body copy.
+
+$font-weight-extra-bold: 800;
+///////////////////////////////////
+
+/// TITLE LARGE
+$font-size-x-small-title-large: 1.5625rem;
+$line-height-x-small-title-large: 1.24;
+$letter-spacing-x-small-title-large: .014em;
+
+$font-size-small-title-large: 1.625rem;
+$line-height-small-title-large: 1.230769231;
+$letter-spacing-small-title-large: .014em;
+
+$font-size-medium-title-large: 1.6875rem;
+$line-height-medium-title-large: 1.222222222;
+$letter-spacing-medium-title-large: .013em;
+
+$font-size-large-title-large: 1.75rem;
+$line-height-large-title-large: 1.214285714;
+$letter-spacing-large-title-large: .013em;
+
+$font-size-x-large-title-large: 1.875rem;
+$line-height-x-large-title-large: 1.2;
+$letter-spacing-x-large-title-large: .012em;
+
+$font-size-xx-large-title-large: 2rem;
+$line-height-xx-large-title-large: 1.21875;
+$letter-spacing-xx-large-title-large: .012em;
+
+$font-size-xxx-large-title-large: 2.125rem;
+$line-height-xxx-large-title-large: 1.205882353;
+$letter-spacing-xxx-large-title-large: .011em;
+
+/// TITLE MEDIUM
+$font-size-x-small-title-medium: 1.1875rem;
+$line-height-x-small-title-medium: 1.210526316;
+$letter-spacing-x-small-title-medium: -.026em;
+
+$font-size-small-title-medium: 1.25rem;
+$line-height-small-title-medium: 1.2;
+$letter-spacing-small-title-medium: .019em;
+
+$font-size-medium-title-medium: 1.1875rem;
+$line-height-medium-title-medium: 1.333333333;
+$letter-spacing-medium-title-medium: .017em;
+
+$font-size-large-title-medium: 1.375rem;
+$line-height-large-title-medium: 1.272727273;
+$letter-spacing-large-title-medium: .016em;
+
+$font-size-x-large-title-medium: 1.5rem;
+$line-height-x-large-title-medium: 1.25;
+$letter-spacing-x-large-title-medium: .015em;
+
+$font-size-xx-large-title-medium: 1.625rem;
+$line-height-xx-large-title-medium: 1.230769231;
+$letter-spacing-xx-large-title-medium: .014em;
+
+$font-size-xxx-large-title-medium: 1.75rem;
+$line-height-xxx-large-title-medium: 1.214285714;
+$letter-spacing-xxx-large-title-medium: .013em;
+
+/// TITLE SMALL
+$font-size-x-small-title-small: 1.0625rem;
+$line-height-x-small-title-small: 1.235294118;
+$letter-spacing-x-small-title-small: -.024em;
+
+$font-size-small-title-small: 1.125rem;
+$line-height-small-title-small: 1.222222222;
+$letter-spacing-small-title-small: -.025em;
+
+$font-size-medium-title-small: 1.1875rem;
+$line-height-medium-title-small: 1.210526316;
+$letter-spacing-medium-title-small: -.026em;
+
+$font-size-large-title-small: 1.25rem;
+$line-height-large-title-small: 1.2;
+$letter-spacing-large-title-small: .019em;
+
+$font-size-x-large-title-small: 1.375rem;
+$line-height-x-large-title-small: 1.227272727;
+$letter-spacing-x-large-title-small: .016em;
+
+$font-size-xx-large-title-small: 1.5rem;
+$line-height-xx-large-title-small: 1.208333333;
+$letter-spacing-xx-large-title-small: .015em;
+
+$font-size-xxx-large-title-small: 1.625rem;
+$line-height-xxx-large-title-small: 1.230769231;
+$letter-spacing-xxx-large-title-small: .014em;
+
+/// HEADLINE
+$font-size-x-small-headline: .875rem;
+$line-height-x-small-headline: 1.357142857;
+$letter-spacing-x-small-headline: -.011em;
+
+$font-size-small-headline: .9375rem;
+$line-height-small-headline: 1.333333333;
+$letter-spacing-small-headline: -.016em;
+
+$font-size-medium-headline: 1rem;
+$line-height-medium-headline: 1.3125;
+$letter-spacing-medium-headline: -.02em;
+
+$font-size-large-headline: 1.0625rem;
+$line-height-large-headline: 1.294117647;
+$letter-spacing-large-headline: -.024em;
+
+$font-size-x-large-headline: 1.1875rem;
+$line-height-x-large-headline: 1.263157895;
+$letter-spacing-x-large-headline: -.026em;
+
+$font-size-xx-large-headline: 1.3125rem;
+$line-height-xx-large-headline: 1.238095238;
+$letter-spacing-xx-large-headline: .017em;
+
+$font-size-xxx-large-headline: 1.4375rem;
+$line-height-xxx-large-headline: 1.217391304;
+$letter-spacing-xxx-large-headline: .016em;
+
+/// BODY
+$font-size-x-small-body: .875rem;
+$line-height-x-small-body: 1.357142857;
+$letter-spacing-x-small-body: -.011em;
+
+$font-size-small-body: .9375rem;
+$line-height-small-body: 1.333333333;
+$letter-spacing-small-body: -.016em;
+
+$font-size-medium-body: 1rem;
+$line-height-medium-body: 1.3125;
+$letter-spacing-medium-body: -.02em;
+
+$font-size-large-body: 1.0625rem;
+$line-height-large-body: 1.294117647;
+$letter-spacing-large-body: -.024em;
+
+$font-size-x-large-body: 1.1875rem;
+$line-height-x-large-body: 1.263157895;
+$letter-spacing-x-large-body: -.026em;
+
+$font-size-xx-large-body: 1.3125rem;
+$line-height-xx-large-body: 1.238095238;
+$letter-spacing-xx-large-body: .017em;
+
+$font-size-xxx-large-body: 1.4375rem;
+$line-height-xxx-large-body: 1.217391304;
+$letter-spacing-xxx-large-body: .016em;
+
+/// CALLOUT
+$font-size-x-small-callout: .8125rem;
+$line-height-x-small-callout: 1.384615385;
+$letter-spacing-x-small-callout: -.006em;
+
+$font-size-small-callout: .875rem;
+$line-height-small-callout: 1.357142857;
+$letter-spacing-small-callout: -.011em;
+
+$font-size-medium-callout: .9375rem;
+$line-height-medium-callout: 1.333333333;
+$letter-spacing-medium-callout: -.016em;
+
+$font-size-large-callout: 1rem;
+$line-height-large-callout: 1.3125;
+$letter-spacing-large-callout: -.02em;
+
+$font-size-x-large-callout: 1.125rem;
+$line-height-x-large-callout: 1.277777778;
+$letter-spacing-x-large-callout: -.025em;
+
+$font-size-xx-large-callout: 1.25rem;
+$line-height-xx-large-callout: 1.2;
+$letter-spacing-xx-large-callout: .019em;
+
+$font-size-xxx-large-callout: 1.375rem;
+$line-height-xxx-large-callout: 1.227272727;
+$letter-spacing-xxx-large-callout: .016em;
+
+/// SUBHEAD
+$font-size-x-small-subhead: .75rem;
+$line-height-x-small-subhead: 1.333333333;
+$letter-spacing-x-small-subhead: 0em;
+
+$font-size-small-subhead: .8125rem;
+$line-height-small-subhead: 1.384615385;
+$letter-spacing-small-subhead: -.006em;
+
+$font-size-medium-subhead: .875rem;
+$line-height-medium-subhead: 1.357142857;
+$letter-spacing-medium-subhead: -.011em;
+
+$font-size-large-subhead: .9375rem;
+$line-height-large-subhead: 1.333333333;
+$letter-spacing-large-subhead: -.016em;
+
+$font-size-x-large-subhead: 1.0625rem;
+$line-height-x-large-subhead: 1.294117647;
+$letter-spacing-x-large-subhead: -.024em;
+
+$font-size-xx-large-subhead: 1.1875rem;
+$line-height-xx-large-subhead: 1.263157895;
+$letter-spacing-xx-large-subhead: -.026em;
+
+$font-size-xxx-large-subhead: 1.3125rem;
+$line-height-xxx-large-subhead: 1.238095238;
+$letter-spacing-xxx-large-subhead: .017em;
+
+/// FOOTNOTE
+$font-size-x-small-footnote: .75rem;
+$line-height-x-small-footnote: 1.333333333;
+$letter-spacing-x-small-footnote: 0em;
+
+$font-size-large-footnote: .8125rem;
+$line-height-large-footnote: 1.384615385;
+$letter-spacing-large-footnote: -.006em;
+
+$font-size-x-large-footnote: .9375rem;
+$line-height-x-large-footnote: 1.333333333;
+$letter-spacing-x-large-footnote: -.016em;
+
+$font-size-xx-large-footnote: 1.0625rem;
+$line-height-xx-large-footnote: 1.294117647;
+$letter-spacing-xx-large-footnote: -.024em;
+
+$font-size-xxx-large-footnote: 1.1875rem;
+$line-height-xxx-large-footnote: 1.263157895;
+$letter-spacing-xxx-large-footnote: -.026em;
+
+/// CAPTION REGULAR
+$font-size-x-small-caption-regular: .6875rem;
+$line-height-x-small-caption-regular: 1.181818182;
+$letter-spacing-x-small-caption-regular: .006em;
+
+$font-size-large-caption-regular: .75rem;
+$line-height-large-caption-regular: 1.333333333;
+$letter-spacing-large-caption-regular: 0em;
+
+$font-size-x-large-caption-regular: .875rem;
+$line-height-x-large-caption-regular: 1.357142857;
+$letter-spacing-x-large-caption-regular: -.011em;
+
+$font-size-xx-large-caption-regular: 1rem;
+$line-height-xx-large-caption-regular: 1.3125;
+$letter-spacing-xx-large-caption-regular: -.02em;
+
+$font-size-xxx-large-caption-regular: 1.125rem;
+$line-height-xxx-large-caption-regular: 1.277777778;
+$letter-spacing-xxx-large-caption-regular: -.025em;
+
+/// CAPTION SMALL
+$font-size-x-small-caption-small: .6875rem;
+$line-height-x-small-caption-small: 1.181818182;
+$letter-spacing-x-small-caption-small: .006em;
+
+$font-size-x-large-caption-small: .8125rem;
+$line-height-x-large-caption-small: 1.384615385;
+$letter-spacing-x-large-caption-small: -.006em;
+
+$font-size-xx-large-caption-small: .9375rem;
+$line-height-xx-large-caption-small: 1.333333333;
+$letter-spacing-xx-large-caption-small: -.016em;
+
+$font-size-xxx-large-caption-small: 1.0625rem;
+$line-height-xxx-large-caption-small: 1.294117647;
+$letter-spacing-xxx-large-caption-small: -.024em;
+
+
+
+$font-size-x-small: .875rem;
+$font-size-small: .9375rem;
+$font-size-medium: 1rem;
+$font-size-large: 1.0625rem;
+$font-size-x-large: 1.1875rem;
+$font-size-xx-large: 1.3125rem;
+$font-size-xxx-large: 1.4375rem;
+
+$line-height-heading: 1.25;
+/// Unit-less line-heights for reusability.
+
+$line-height-text: 1.428571429;
+/// Unit-less line-heights for reusability.
+
+$line-height-reset: 1;
+/// Remove extra leading. Unit-less line-heights for reusability.
+
+$line-height-tab: 3rem;
+/// Line height for tabs.
+
+$line-height-button: 2.75rem;
+/// Line height for regular buttons.
+
+$line-height-button-small: 1.75rem;
+/// Line height for small buttons.

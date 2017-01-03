@@ -1,0 +1,157 @@
+/// ========================================================================
+/// DESIGN TOKENS BASE BUTTON
+/// ========================================================================
+
+$color-text-button-brand: $white;
+/// Text color for brandable primary button.
+
+$color-text-button-brand-hover: $white;
+/// Text color for brandable primary button - hover state.
+
+$color-text-button-brand-disabled: $white;
+/// Text color for brandable primary button - disabled state.
+
+$color-text-button-default: $blueberry;
+/// Text color for default secondary button.
+
+$color-text-button-default-disabled: $blueberry-geysir;
+/// Text color for default secondary button - disabled state.
+
+$color-text-button-default-hint: $blueberry-casper;
+/// Text color for a button that has a parent element that has a hover state.
+/// This is the default text/icon color for that button before its parent has
+/// been hovered over.
+
+$color-text-button-inverse: $blueberry-steam;
+/// Text color for buttons on inversed/dark backgrounds.
+
+$color-text-button-inverse-disabled: $white-transparent-15;
+/// Text color for buttons on inversed/dark backgrounds.
+
+$color-text-button-destructive: $white;
+/// Text color for destructive button.
+
+$color-text-button-destructive-hover: $white;
+/// Text color for destructive button - hover state.
+
+$color-text-button-google: $white;
+/// Text color for google button.
+
+$color-text-button-google-hover: $white;
+/// Text color for google button - hover state.
+
+$color-text-button-facebook: $white;
+/// Text color for facebook button.
+
+$color-text-button-facebook-hover: $white;
+/// Text color for facebook button - hover state.
+
+$color-text-icon-default: $blueberry-kashmir;
+/// Default icon color.
+
+$color-text-icon-default-active: $blueberry-midnight;
+/// Default icon color - active state.
+
+$color-text-icon-default-hover: $blueberry;
+/// Default icon color - hover state.
+
+$color-text-icon-default-disabled: $blueberry-geysir;
+/// Default icon color - disabled state.
+
+$color-text-icon-default-hint: $blueberry-casper;
+/// Text color for a button that has a parent element that has a hover state.
+/// This is the default text/icon color for that button before its parent has
+/// been hovered over.
+
+$color-text-icon-inverse-hint: $white-transparent-50;
+/// Text color for a button that has a parent element that has a hover state.
+/// This is the default text/icon color for that button before its parent has
+/// been hovered over.
+
+$color-text-icon-inverse-hover: $white;
+/// Icon color on dark background - hover state.
+
+
+
+$color-background-button-brand: $grape;
+/// Brandable primary button.
+
+$color-background-button-brand-active: $grape-midnight;
+/// Brandable primary button - active state.
+
+$color-background-button-brand-hover: $grape-endeavour;
+/// Brandable primary button - hover state.
+
+$color-background-button-brand-disabled: $grape-steam;
+/// Brandable primary button - disabled state.
+
+$color-background-button-default: $white;
+/// Default scondary button.
+
+$color-background-button-default-active: $blueberry-white;
+/// Default secondary button - active state.
+
+$color-background-button-default-hover: $blueberry-water;
+/// Default scondary button - hover state.
+
+$color-background-button-default-disabled: $white;
+/// Default secondary button - disabled state.
+
+$color-background-button-destructive: $tomato;
+/// Destructive button.
+
+$color-background-button-destructive-active: $tomato;
+/// Destructive button - active state.
+
+$color-background-button-destructive-hover: $tomato-tabasco;
+/// Destructive button - hover state.
+
+$color-background-button-google: $google-red;
+/// Google button.
+
+$color-background-button-google-active: $google-red;
+/// Google button - active state.
+
+$color-background-button-google-hover: $google-red;
+/// Google button - hover state.
+
+$color-background-button-facebook: $facebook-blue;
+/// Facebook button.
+
+$color-background-button-facebook-active: $facebook-blue;
+/// Facebook button - active state.
+
+$color-background-button-facebook-hover: $facebook-blue;
+/// Facebook button - hover state.
+
+
+
+$color-border-button-brand: $grape;
+/// Border color for brandable primary button.
+
+$color-border-button-brand-disabled: $transparent;
+/// Border color for brandable primary button - disabled state.
+
+$color-border-button-default: $blueberry-geysir;
+/// Border color for default secondary button.
+
+$color-border-button-destructive: $tomato;
+/// Border color for destructive button.
+
+$color-border-button-destructive-active: $tomato-flush;
+/// Border color for destructive button - active state.
+
+$color-border-button-inverse-disabled: $white-transparent-15;
+/// Border color for disabled inverse button.
+
+$color-border-icon-inverse-hint: $white-transparent-50;
+/// Border color for inverse icon hint.
+
+$color-border-icon-inverse-hint-hover: $white-transparent-75;
+/// Border color for inverse icon hint - hover state.
+
+$color-border-button-google: $google-red;
+/// Border color for google button.
+
+$color-border-button-facebook: $facebook-blue;
+/// Border color for facebook button.

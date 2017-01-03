@@ -1,0 +1,46 @@
+/// ========================================================================
+/// UTILITIES TEXT HEADLINE
+/// ========================================================================
+
+.u-text-headline {
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-x-small-headline;
+  line-height: $line-height-x-small-headline;
+  letter-spacing: $letter-spacing-x-small-headline;
+
+  @include mq-small-min {
+    font-size: $font-size-small-headline;
+    line-height: $line-height-small-headline;
+    letter-spacing: $letter-spacing-small-headline;
+  }
+
+  @include mq-medium-min {
+    font-size: $font-size-medium-headline;
+    line-height: $line-height-medium-headline;
+    letter-spacing: $letter-spacing-medium-headline;
+  }
+
+  @include mq-large-min {
+    font-size: $font-size-large-headline;
+    line-height: $line-height-large-headline;
+    letter-spacing: $letter-spacing-large-headline;
+  }
+
+  @include mq-x-large-min {
+    font-size: $font-size-x-large-headline;
+    line-height: $line-height-x-large-headline;
+    letter-spacing: $letter-spacing-x-large-headline;
+  }
+
+  @include mq-xx-large-min {
+    font-size: $font-size-xx-large-headline;
+    line-height: $line-height-xx-large-headline;
+    letter-spacing: $letter-spacing-xx-large-headline;
+  }
+
+  @include mq-xxx-large-min {
+    font-size: $font-size-xxx-large-headline;
+    line-height: $line-height-xxx-large-headline;
+    letter-spacing: $letter-spacing-xxx-large-headline;
+  }
+}

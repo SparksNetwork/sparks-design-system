@@ -1,0 +1,34 @@
+/// ========================================================================
+/// UTILITIES TEXT FOOTNOTE
+/// ========================================================================
+
+.u-text-footnote {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-x-small-footnote;
+  line-height: $line-height-x-small-footnote;
+  letter-spacing: $letter-spacing-x-small-footnote;
+
+  @include mq-large-min {
+    font-size: $font-size-large-footnote;
+    line-height: $line-height-large-footnote;
+    letter-spacing: $letter-spacing-large-footnote;
+  }
+
+  @include mq-x-large-min {
+    font-size: $font-size-x-large-footnote;
+    line-height: $line-height-x-large-footnote;
+    letter-spacing: $letter-spacing-x-large-footnote;
+  }
+
+  @include mq-xx-large-min {
+    font-size: $font-size-xx-large-footnote;
+    line-height: $line-height-xx-large-footnote;
+    letter-spacing: $letter-spacing-xx-large-footnote;
+  }
+
+  @include mq-xxx-large-min {
+    font-size: $font-size-xxx-large-footnote;
+    line-height: $line-height-xxx-large-footnote;
+    letter-spacing: $letter-spacing-xxx-large-footnote;
+  }
+}

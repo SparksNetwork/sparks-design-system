@@ -1,0 +1,38 @@
+/// ========================================================================
+/// TOKENS BACKGROUND
+/// ========================================================================
+
+$color-background: $sardine;
+/// Default background color for the whole app.
+
+$color-background-alt: $white;
+/// Second default background color for the whole app.
+
+$color-background-alt-2: $blueberry-white;
+/// Used when further differentiation is needed because $color-background and
+/// $color-background-alt are both being used in close proximity.
+
+$color-background-alt-inverse: $grape-palatinate;
+/// Alternative background color for dark portions of the app.
+
+$color-background-highlight-search: $mustard;
+/// Background color for highlighting text search results.
+
+$color-background-scrollbar: $blueberry-steam;
+/// The background color of an internal scrollbar.
+
+$color-background-scrollbar-track: $blueberry-cadet;
+/// The background color of an internal scrollbar track.
+
+$color-background-selection: $blueberry-cadet;
+/// Used as the background color for selected text and elements.
+
+$color-background-row-hover: $blueberry-water;
+/// Used as the background color for the hover state on rows or items on
+/// list-like components.
+
+$color-background-inverse: $grape-bistre;
+/// Default background color for dark portions of the app.
+
+$color-background-modal-brand: $grape;
+/// Brandable modal header.

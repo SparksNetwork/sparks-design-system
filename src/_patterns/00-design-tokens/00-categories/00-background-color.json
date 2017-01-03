@@ -1,0 +1,58 @@
+{
+  "designTokens": [
+    {
+      "name": "$color-background",
+      "value": "#E5E5E5",
+      "rawValue": "$sardine",
+      "comment": "Default background color for the whole app."
+    },
+    {
+      "name": "$color-background-alt",
+      "value": "#FFFFFF",
+      "rawValue": "$white",
+      "comment": "Second default background color for the whole app."
+    },
+    {
+      "name": "$color-background-alt-2",
+      "value": "#E1E4E8",
+      "rawValue": "$blueberry-white",
+      "comment": "Used when further differentiation is needed because <code>$color-background</code> and <code>$color-background-alt</code> are both being used in close proximity."
+    },
+    {
+      "name": "$color-background-alt-inverse",
+      "value": "#4A1F50",
+      "rawValue": "$grape",
+      "comment": "Alternative background color for dark portions of the app."
+    },
+    {
+      "name": "$color-background-highlight-search",
+      "value": "#F6A623",
+      "rawValue": "$mustard",
+      "comment": "Background color for highlighting text search results."
+    },
+    {
+      "name": "$color-background-scrollbar",
+      "value": "#DCE1E8",
+      "rawValue": "$blueberry-steam",
+      "comment": "The background color of an internal scrollbar."
+    },
+    {
+      "name": "$color-background-scrollbar-track",
+      "value": "#C5D5E8",
+      "rawValue": "$blueberry-cadet",
+      "comment": "The background color of an internal scrollbar track."
+    },
+    {
+      "name": "$color-background-selection",
+      "value": "#C5D5E8",
+      "rawValue": "$blueberry-cadet",
+      "comment": "Used as the background color for selected text and elements."
+    },
+    {
+      "name": "$color-background-row-hover",
+      "value": "#E3E5E8",
+      "rawValue": "$blueberry-water",
+      "comment": "Used as the background color for the hover state on rows or items on list-like components."
+    }
+  ]
+}

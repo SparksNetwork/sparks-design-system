@@ -1,0 +1,81 @@
+/// ========================================================================
+/// TYPOGRAPHY
+/// ========================================================================
+
+// Short-hand onto specific font-stacks.
+@mixin font-family($family) {
+  @if ($family == 'sans-serif') {
+    font-family: 'Roboto', 'Noto', sans-serif;
+  }
+  @else if ($family == 'serif') {
+    font-family: 'Baskerville', 'Garamond', 'Palatino', 'Palatino Linotype', 'Hoefler Text', 'Times New Roman', serif;
+  }
+  @else if ($family == 'performant') {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+  }
+  @else {
+    @warn '#{$family} is not a valid font-family.';
+  }
+}
+
+// Generate font-size and baseline compatible line-height.
+@mixin font-size($font-size, $line-height: auto) {
+  @include rem(font-size, $font-size);
+
+  @if ($line-height == auto) {
+    line-height: ceil($font-size / $global-line-height) * ($global-line-height / $font-size);
+  }
+  @else if unit($line-height) == 'px' {
+    line-height: ($line-height / $font-size);
+  }
+  @else {
+    @if (type-of($line-height) == number or $line-height == inherit or $line-height == normal) {
+      line-height: $line-height;
+    }
+    @else if ($line-height != none and $line-height != false) {
+      @warn "`#{$line-height}` is not a valid value for `line-height`."
+    }
+  }
+}
+
+// Map keywords onto numbered weights
+@mixin font-weight($weight) {
+  @if ($weight == 'light') {
+    font-weight: 300;
+  }
+  @else if ($weight == 'regular') {
+    font-weight: 400;
+  }
+  @else if ($weight == 'medium') {
+    font-weight: 600;
+  }
+  @else {
+    @warn '`#{$weight}` is not a valid font-weight.'
+  }
+}
+
+// Influence browser text-rendering
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+
+
+
+
+// @TODO move to helpers
+@mixin typography-style($style) {
+
+  @if ($style == 'Title') {
+    @include rem(font-size, 24px);
+    font-weight: 500;
+  }
+
+}

@@ -1,0 +1,173 @@
+/// ========================================================================
+/// COMPONENTS BUTTONS BASE
+/// ========================================================================
+
+.c-button {
+  position: relative;
+  display: inline-block;
+  padding: 0;
+  background: transparent {
+    clip: border-box;
+  };
+  border: solid $border-width-thin transparent {
+    radius: $border-radius-medium;
+  };
+  font-size: $font-size-small;
+  line-height: $line-height-button;
+  text-decoration: none;
+  color: $color-text-link;
+  -webkit-appearance: none;
+  white-space: normal;
+  user-select: none;
+  transition:
+    color $duration-immediately linear,
+    background-color $duration-immediately linear;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited {
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: $color-text-link-hover;
+  }
+
+  &:focus {
+    @include focus-button;
+  }
+
+  &:active {
+    color: $color-text-link-active;
+  }
+
+  &[disabled] {
+    color: $color-text-button-default-disabled;
+  }
+
+  &:hover,
+  &:focus,
+  &:active,
+  &[disabled] {
+    .c-button__icon {
+      fill: currentColor;
+    }
+  }
+
+  & + .c-button-group {
+    margin-left: $spacing-xx-small;
+  }
+}
+
+a.c-button {
+  text-align: center;
+
+  &:focus {
+    @include focus-button;
+  }
+}
+
+/// Button spacing
+.c-button__icon--left {
+  margin-right: $spacing-x-small;
+}
+
+.c-button__icon--right {
+  margin-left: $spacing-x-small;
+}
+
+.c-button--small {
+  line-height: $line-height-button-small;
+  /// Force icon-only buttons to be the same
+  /// height as small buttons since they’re SVGs
+  /// and line-height has no effect on them.
+  min-height: $square-icon-medium-boundary;
+}
+
+/// Neutral Button
+.c-button--neutral {
+  @include button;
+  @include button-base;
+  background-color: $color-background-button-default;
+
+  &[disabled] {
+    background-color: $color-background-button-default-disabled;
+    cursor: default;
+  }
+}
+
+.c-button--hint {
+  color: $color-text-button-default-hint;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-text-button-default;
+  }
+}
+
+/// A parent class must be put on anything that contains
+/// a .c-button--hint so that the child reacts when
+/// the parent is hovered.
+.c-hint-parent {
+  &:hover,
+  &:focus {
+    .c-button--hint {
+      color: $color-text-button-default;
+    }
+  }
+}
+
+/// Brand Buttons
+.c-button--brand {
+  @include button;
+  @include button-brand;
+
+  &[disabled] {
+    background-color: $color-background-button-brand-disabled;
+    border-color: $color-border-button-brand-disabled;
+    color: $color-text-button-brand-disabled;
+  }
+}
+
+.c-button--inverse,
+.c-button-group .c-button--icon-inverse {
+  &,
+  &:link,
+  &:visited {
+    color: $color-text-button-inverse;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-text-button-default;
+  }
+
+  &:focus {
+    @include focus-inverse;
+  }
+
+  &[disabled] {
+    /// Ensure that disabled buttons don’t inherit hover states.
+    color: $color-text-button-inverse-disabled;
+  }
+}
+
+a.c-button--inverse:focus {
+  @include focus-inverse;
+}
+
+/// Destructive Button
+.c-button--destructive {
+  @include button;
+  @include button-destructive;
+
+  &[disabled] {
+    background-color: $color-background-button-brand-disabled;
+    border-color: $color-border-button-brand-disabled;
+    color: $color-text-button-brand-disabled;
+  }
+}

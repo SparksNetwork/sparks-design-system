@@ -1,0 +1,31 @@
+<section class="sg-design-tokens  background-color">
+  <div class="u-scrollable--x">
+    <table class="table">
+      <thead>
+        <tr class="sg-text-heading--label-weak">
+          <th scope="col">Token</th>
+          <th scope="col">Example</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        {{# designTokens }}
+        <tr>
+          <td>
+            <code>{{ name }}</code>
+            <p class="u-text-body--small">{{& comment }}</p>
+          </td>
+          <td class="token">
+            <div style="background-color: {{ value }}"></div>
+            <code>
+              <div class="u-text-body--small"></div>
+              <div class="u-text-body--small">{{ rawValue }}</div>
+            </code>
+          </td>
+        </tr>
+        {{/ designTokens}}
+
+      </tbody>
+    </table>
+  </div>
+</section>

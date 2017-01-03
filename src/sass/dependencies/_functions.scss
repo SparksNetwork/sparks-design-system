@@ -1,0 +1,17 @@
+/// ========================================================================
+/// DEPENDENCIES FUNCTIONS
+/// ========================================================================
+
+/// Calculate PX to EM
+/// Use - width: pem(600px);
+/// Output - width: 37.5em;
+@function pem($pixels) {
+  @return ($pixels / 16px * 1em);
+}
+
+/// Calculate PX to REM
+/// Use - width: pem(600px);
+/// Output - width: 37.5rem;
+@function rem($pixels) {
+  @return ($pixels / 16px * 1rem);
+}

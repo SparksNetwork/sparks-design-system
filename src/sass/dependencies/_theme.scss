@@ -1,0 +1,113 @@
+/// ========================================================================
+/// DEPENDENCIES THEME
+/// ========================================================================
+
+@mixin inverse-links {
+  color: $color-text-inverse;
+
+  a:not(.c-button--neutral) {
+    color: $color-text-link-inverse;
+    text-decoration: underline;
+
+    &:link,
+    &:visited {
+      color: $color-text-link-inverse;
+    }
+
+    &:hover,
+    &:focus {
+      color: $color-text-link-inverse-hover;
+    }
+
+    &:active {
+      color: $color-text-link-inverse-active;
+    }
+
+    &[disabled] {
+      color: $color-text-link-inverse-disabled;
+    }
+  }
+}
+
+
+
+@mixin border($borders: null, $radius: null) {
+
+  @if $borders != null {
+
+    @if $borders == around {
+      border: solid $border-width-thin $color-border;
+    }
+
+    @else {
+
+      @each $positions in $borders {
+
+        @each $position in $positions {
+          border-#{$position}: solid $border-width-thin $color-border;
+        }
+
+      }
+
+    }
+
+  }
+
+  @if $radius != null {
+    border-radius: $radius;
+    background-clip: padding-box;
+  }
+
+}
+
+
+
+@mixin theme($theme, $borders: null) {
+  @if $theme == shade {
+    background-color: $color-background;
+  }
+
+  @else if $theme == alt {
+    background-color: $color-background-alt;
+  }
+
+  @else if $theme == inverse {
+    background-color: $color-background-inverse;
+    @include inverse-links;
+  }
+
+  @else if $theme == alt-inverse {
+    background-color: $color-background-alt-inverse;
+    @include inverse-links;
+  }
+
+  @else if $theme == brand {
+    background-color: $color-background-modal-brand;
+    @include inverse-links;
+  }
+
+  @else {
+    background-color: $color-background-alt;
+  }
+
+  @include border($borders);
+}
+
+
+
+@mixin box($theme: null, $padding: $spacing-medium, $border-radius: $border-radius-medium, $borders: null) {
+  padding: $padding;
+
+  @if $border-radius != null {
+    border-radius: $border-radius;
+    background-clip: padding-box;
+  }
+
+  @if $theme != null {
+    @include theme($theme, $borders);
+  }
+
+  @else if $theme == null and $borders != null {
+    @include border($borders);
+  }
+}

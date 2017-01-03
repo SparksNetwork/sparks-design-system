@@ -1,0 +1,36 @@
+/// ========================================================================
+/// DESIGN TOKENS BASE TEXT
+/// ========================================================================
+
+$color-text-default: $liquorice-quartz;
+/// Body text color.
+
+$color-text-error: $tomato;
+/// Error text for inputs and miscellaneous errors.
+
+$color-text-inverse: $white;
+/// Inverse text color for dark backgrounds.
+
+$color-text-link: $blueberry;
+/// Link text (508).
+
+$color-text-link-active: $blueberry-midnight;
+/// Active link text.
+
+$color-text-link-hover: $blueberry-endeavour;
+/// Hover link text.
+
+$color-text-link-inverse: $white;
+/// Link color on dark background.
+
+$color-text-link-inverse-active: $white-transparent-50;
+/// Link color on dark background - active state.
+
+$color-text-link-inverse-hover: $white-transparent-75;
+/// Link color on dark background - hover state.
+
+$color-text-link-inverse-disabled: $white-transparent-15;
+/// Link color on dark background - disabled state.
+
+$color-text-weak: $liquorice-grey;
+/// Color for text that is purposefully de-emphasized to create visual hierarchy.

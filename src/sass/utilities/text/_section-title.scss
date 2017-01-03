@@ -1,0 +1,59 @@
+/// ========================================================================
+/// UTILITIES TEXT SECTION TITLE
+/// ========================================================================
+
+.u-section {
+  margin: {
+    top: $spacing-x-small;
+    bottom: $spacing-x-small;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    font-size: $font-size-large;
+  }
+
+  &__title-action {
+    display: flex;
+    align-items: center;
+    background: $color-background;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    color: currentColor;
+    font-size: inherit;
+    padding: 0 $spacing-x-small;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $color-background-button-default-active;
+      color: inherit;
+    }
+  }
+
+  &__content {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+  }
+
+  &__title-action-icon {
+    transform: rotate(-90deg);
+  }
+
+  &.is-open {
+    .u-section__title-action-icon {
+      transform: rotate(0deg);
+      transform-origin: 45%;
+    }
+
+    .u-section__content {
+      padding-top: $spacing-small;
+      visibility: visible;
+      opacity: 1;
+      height: auto;
+    }
+  }
+}

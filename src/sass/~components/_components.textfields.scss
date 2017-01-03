@@ -1,0 +1,46 @@
+/// ========================================================================
+/// TEXTFIELDS
+/// ========================================================================
+
+.c-textfield {
+
+  position: relative;
+
+  &__input {
+    display: inline-block;
+    color: $color-core-liquorice;
+    background-color: $color-core-rice;
+    border: solid 2px #9b9b9b;
+    border-radius: 6px;
+    box-sizing: border-box;
+    height: 50px;
+    padding: 12px 16px 0;
+    outline-width: 0;
+    @include font-family('sans-serif');
+    font-size: 14px;
+
+    &:focus {
+      border-color: $color-core-liquorice;
+    }
+
+    &:focus,
+    &:valid {
+      & + .c-textfield__label {
+        transform: translate(0, -50%) scale(0.75);
+        transform-origin: top left;
+        transition: transform 0.1s ease-in, color 0.1s ease-in;
+        font-style: normal;
+      }
+    }
+  }
+
+  &__label {
+    position: absolute;
+    top: 18px;
+    left: 18px;
+    color: #4a4a4a;
+    font-style: italic;
+    line-height: 1;
+  }
+
+}

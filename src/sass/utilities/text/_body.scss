@@ -1,0 +1,46 @@
+/// ========================================================================
+/// UTILITIES TEXT BODY
+/// ========================================================================
+
+.u-text-body {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-x-small-body;
+  line-height: $line-height-x-small-body;
+  letter-spacing: $letter-spacing-x-small-body;
+
+  @include mq-small-min {
+    font-size: $font-size-small-body;
+    line-height: $line-height-small-body;
+    letter-spacing: $letter-spacing-small-body;
+  }
+
+  @include mq-medium-min {
+    font-size: $font-size-medium-body;
+    line-height: $line-height-medium-body;
+    letter-spacing: $letter-spacing-medium-body;
+  }
+
+  @include mq-large-min {
+    font-size: $font-size-large-body;
+    line-height: $line-height-large-body;
+    letter-spacing: $letter-spacing-large-body;
+  }
+
+  @include mq-x-large-min {
+    font-size: $font-size-x-large-body;
+    line-height: $line-height-x-large-body;
+    letter-spacing: $letter-spacing-x-large-body;
+  }
+
+  @include mq-xx-large-min {
+    font-size: $font-size-xx-large-body;
+    line-height: $line-height-xx-large-body;
+    letter-spacing: $letter-spacing-xx-large-body;
+  }
+
+  @include mq-xxx-large-min {
+    font-size: $font-size-xxx-large-body;
+    line-height: $line-height-xxx-large-body;
+    letter-spacing: $letter-spacing-xxx-large-body;
+  }
+}

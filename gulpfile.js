@@ -7,7 +7,9 @@ var gulp = require('gulp'),
   path = require('path'),
   browserSync = require('browser-sync').create(),
   argv = require('minimist')(process.argv.slice(2)),
-  sass = require('gulp-sass');
+  sass = require('gulp-sass'),
+  sourcemaps = require('gulp-sourcemaps'),
+  autoprefixer = require('gulp-autoprefixer');
 
 /******************************************************
  * COPY TASKS - stream assets from source to destination
@@ -24,6 +26,12 @@ gulp.task('pl-copy:img', function(){
     .pipe(gulp.dest(path.resolve(paths().public.images)));
 });
 
+// Images copy
+gulp.task('pl-copy:icons', function(){
+  return gulp.src('**/*.*',{cwd: path.resolve(paths().source.icons)} )
+    .pipe(gulp.dest(path.resolve(paths().public.icons)))
+});
+
 // Favicon copy
 gulp.task('pl-copy:favicon', function(){
   return gulp.src('favicon.ico', {cwd: path.resolve(paths().source.root)} )
@@ -32,13 +40,13 @@ gulp.task('pl-copy:favicon', function(){
 
 // Fonts copy
 gulp.task('pl-copy:font', function(){
-  return gulp.src('*', {cwd: path.resolve(paths().source.fonts)})
+  return gulp.src('**/*.*', {cwd: path.resolve(paths().source.fonts)})
     .pipe(gulp.dest(path.resolve(paths().public.fonts)));
 });
 
 // CSS Copy
 gulp.task('pl-copy:css', function(){
-  return gulp.src(path.resolve(paths().source.css, '*.css'))
+  return gulp.src(path.resolve(paths().source.css, '*.*'))
     .pipe(gulp.dest(path.resolve(paths().public.css)))
     .pipe(browserSync.stream());
 });
@@ -67,7 +75,10 @@ gulp.task('pl-copy:styleguide-css', function(){
 // Sass compile
 gulp.task('sass', function(){
   return gulp.src('**/*.scss', {cwd: path.resolve(paths().source.sass)})
+    .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', sass.logError))
+    .pipe(autoprefixer())
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(path.resolve(paths().source.css)));
 });
 
@@ -94,6 +105,7 @@ gulp.task('pl-assets', gulp.series(
   gulp.parallel(
     'pl-copy:js',
     'pl-copy:img',
+    'pl-copy:icons',
     'pl-copy:favicon',
     'pl-copy:font',
     'pl-copy:css',
@@ -162,13 +174,14 @@ function watch() {
   gulp.watch(path.resolve(paths().source.sass, '**/*.scss'), { awaitWriteFinish: true }).on('change', gulp.series('sass'));
   gulp.watch(path.resolve(paths().source.css, '**/*.css'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:css', reloadCSS));
   gulp.watch(path.resolve(paths().source.styleguide, '**/*.*'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:styleguide', 'pl-copy:styleguide-css', reloadCSS));
+  gulp.watch(path.resolve(paths().source.fonts, '**/*'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:font', reload));
+  gulp.watch(path.resolve(paths().source.images, '**/*'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:img', reload));
+  gulp.watch(path.resolve(paths().source.icons, '**/*'), { awaitWriteFinish: true }).on('change', gulp.series('pl-copy:icons', reload));
 
   var patternWatches = [
     path.resolve(paths().source.patterns, '**/*.json'),
     path.resolve(paths().source.patterns, '**/*.md'),
     path.resolve(paths().source.data, '*.json'),
-    path.resolve(paths().source.fonts + '/*'),
-    path.resolve(paths().source.images + '/*'),
     path.resolve(paths().source.meta, '*'),
     path.resolve(paths().source.annotations + '/*')
   ].concat(getTemplateWatches());

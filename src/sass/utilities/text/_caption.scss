@@ -1,0 +1,59 @@
+/// ========================================================================
+/// UTILITIES TEXT CAPTION
+/// ========================================================================
+
+.u-text-caption--regular {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-x-small-caption-regular;
+  line-height: $line-height-x-small-caption-regular;
+  letter-spacing: $letter-spacing-x-small-caption-regular;
+
+  @include mq-large-min {
+    font-size: $font-size-large-caption-regular;
+    line-height: $line-height-large-caption-regular;
+    letter-spacing: $letter-spacing-large-caption-regular;
+  }
+
+  @include mq-x-large-min {
+    font-size: $font-size-x-large-caption-regular;
+    line-height: $line-height-x-large-caption-regular;
+    letter-spacing: $letter-spacing-x-large-caption-regular;
+  }
+
+  @include mq-xx-large-min {
+    font-size: $font-size-xx-large-caption-regular;
+    line-height: $line-height-xx-large-caption-regular;
+    letter-spacing: $letter-spacing-xx-large-caption-regular;
+  }
+
+  @include mq-xxx-large-min {
+    font-size: $font-size-xxx-large-caption-regular;
+    line-height: $line-height-xxx-large-caption-regular;
+    letter-spacing: $letter-spacing-xxx-large-caption-regular;
+  }
+}
+
+.u-text-caption--small {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-x-small-caption-small;
+  line-height: $line-height-x-small-caption-small;
+  letter-spacing: $letter-spacing-x-small-caption-small;
+
+  @include mq-x-large-min {
+    font-size: $font-size-x-large-caption-small;
+    line-height: $line-height-x-large-caption-small;
+    letter-spacing: $letter-spacing-x-large-caption-small;
+  }
+
+  @include mq-xx-large-min {
+    font-size: $font-size-xx-large-caption-small;
+    line-height: $line-height-xx-large-caption-small;
+    letter-spacing: $letter-spacing-xx-large-caption-small;
+  }
+
+  @include mq-xxx-large-min {
+    font-size: $font-size-xxx-large-caption-small;
+    line-height: $line-height-xxx-large-caption-small;
+    letter-spacing: $letter-spacing-xxx-large-caption-small;
+  }
+}

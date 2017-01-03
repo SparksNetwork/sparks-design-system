@@ -1,0 +1,13 @@
+/// ========================================================================
+/// DEPENDENCIES LISTS
+/// ========================================================================
+
+@mixin list-has-bullets {
+  margin-left: $spacing-large;
+  list-style: disc;
+}
+
+@mixin list-has-numbers {
+  margin-left: $spacing-large;
+  list-style: decimal;
+}

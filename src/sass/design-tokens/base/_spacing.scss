@@ -1,0 +1,22 @@
+/// ========================================================================
+/// DESIGN TOKENS BASE SPACING
+/// ========================================================================
+
+$spacing-map: (
+  xxx-small: .125rem,
+  xx-small: .25rem,
+  x-small: .5rem,
+  small: .75rem,
+  medium: 1rem,
+  large: 1.5rem,
+  x-large: 2rem
+);
+
+$spacing-none: 0;
+$spacing-xxx-small: map-get($spacing-map, xxx-small);
+$spacing-xx-small: map-get($spacing-map, xx-small);
+$spacing-x-small: map-get($spacing-map, x-small);
+$spacing-small: map-get($spacing-map, small);
+$spacing-medium: map-get($spacing-map, medium);
+$spacing-large: map-get($spacing-map, large);
+$spacing-x-large: map-get($spacing-map, x-large);

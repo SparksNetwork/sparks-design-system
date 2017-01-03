@@ -1,0 +1,24 @@
+/// ========================================================================
+/// DEPENDENCIES ROOT
+/// ========================================================================
+
+@mixin root($root: html, $body: body) {
+  #{$root} {
+    font-family: $font-family;
+    font-size: 100%;
+    line-height: $line-height-text;
+    background-color: $color-background-alt;
+    color: $color-text-default;
+    -webkit: {
+      tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    height: 100%;
+  }
+
+  #{body} {
+    font-size: $font-size-medium;
+    background: transparent;
+    min-height: 100vh;
+    height: 100%;
+  }
+}

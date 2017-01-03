@@ -1,0 +1,47 @@
+/// ========================================================================
+/// STYLEGUIDE REGIONS PAGE CONTAINER
+/// ========================================================================
+
+.sg-main {
+  padding: $spacing-large;
+
+  & code {
+    color: $liquorice;
+  }
+}
+
+.sg-pattern-category-body {
+  font-size: $font-size-medium;
+  line-height: $line-height-text;
+
+  & > p {
+    margin-bottom: 0.75rem;
+  }
+}
+
+.sg-pattern-desc {
+
+  & p {
+    margin-bottom: 0.75rem;
+  }
+
+  td {
+    padding: $spacing-xx-small 0;
+  }
+
+  td {
+    &:first-child {
+      white-space: nowrap;
+      width: 1px;
+      padding-right: $spacing-xx-small;
+    }
+
+    vertical-align: top;
+  }
+}
+
+.sg-pattern-extra {
+  &.active {
+    max-height: 100%;
+  }
+}

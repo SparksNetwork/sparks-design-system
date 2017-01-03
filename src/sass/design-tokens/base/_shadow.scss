@@ -1,0 +1,15 @@
+/// ========================================================================
+/// DESIGN TOKENS BASE SHADOW
+/// ========================================================================
+
+$shadow-button-focus: 0 0 3px $blueberry;
+/// Custom glow for focus states on UI elements with explicit containers.
+
+$shadow-button-focus-inverse: 0 0 3px $blueberry-steam;
+/// Custom glow for focus states on UI elements with explicit containers on
+/// dark or vibrantly colored backgrounds.
+
+$shadow-elevation-2dp: 0 2px 2px 0 $black-transparent-16,
+                       0 1px 5px 0 $black-transparent-07,
+                       0 3px 1px -2px $black-transparent-05;
+/// Shadow for 2dp elevation.

@@ -1,0 +1,25 @@
+/// ========================================================================
+/// UTILITIES GRID AUTOMATIC SIZING
+/// ========================================================================
+
+.u-grid {
+  display: flex;
+
+  &--frame {
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+
+  &--vertical {
+    flex-direction: column;
+  }
+
+  &--vertical-reverse {
+    flex-direction: column-reverse;
+  }
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+}

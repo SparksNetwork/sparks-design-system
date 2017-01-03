@@ -1,0 +1,197 @@
+/// ========================================================================
+/// COMPONENTS BUTTON ICONS BASE
+/// ========================================================================
+
+.c-button--icon,
+.c-button--icon-inverse,
+.c-button--icon-container,
+.c-button--icon-border,
+.c-button--icon-border-filled,
+.c-button--icon-border-inverse,
+.c-button--icon-more,
+.c-button--icon-error {
+  line-height: $line-height-reset;
+  vertical-align: middle;
+  color: $color-text-icon-default;
+}
+
+.c-button--icon-border[disabled] {
+  &:hover,
+  &:focus {
+    background-color: transparent;
+  }
+}
+
+.c-button--icon-border-filled,
+.c-button--icon-border {
+  @include button-base;
+}
+
+.c-button--icon-border-inverse {
+  border: solid $border-width-thin $color-border-button-default;
+}
+
+.c-button--icon-container,
+.c-button--icon-border,
+.c-button--icon-border-filled,
+.c-button--icon-border-inverse {
+  // @TODO If border-radius is placed on the icon/svg, the button element causes corner clipping problems that background-clip isn't solving.
+  @include square($square-icon-medium-boundary)
+}
+
+/// Button icon with background
+.c-button--icon-more {
+  line-height: $line-height-button;
+  padding: 0 $spacing-x-small;
+  vertical-align: middle;
+  border: solid $border-width-thin $color-border-button-default;
+
+  &:hover,
+  &:focus {
+    @include button-base;
+
+    .c-button__icon {
+      fill: $color-text-icon-default-hover;
+    }
+  }
+
+  &:active .c-button__icon {
+    fill: $color-text-icon-default-active;
+  }
+
+  &[disabled] {
+    cursor: default;
+
+    .c-button__icon {
+      fill: $color-text-icon-default-disabled;
+    }
+  }
+}
+
+/// Button icon on inversed background
+.c-button--icon-inverse,
+.c-button--icon-border-inverse {
+  color: $color-text-link-inverse;
+
+  &:hover,
+  &:focus {
+    color: $color-text-link-inverse-hover;
+  }
+
+  &:active {
+    color: $color-text-link-inverse-active;
+  }
+
+  &[disabled] {
+    color: $color-text-link-inverse-disabled;
+  }
+}
+
+/// Button icon for errors
+.c-button--icon-error {
+  &,
+  &:hover,
+  &:active,
+  &:focus {
+    color: $color-text-error;
+  }
+}
+
+.c-button--icon-border-inverse[disabled] {
+  border-color: $color-border-button-inverse-disabled;
+}
+
+/// Stateful button icon
+.c-button--icon-border.is-selected {
+  @include button-brand;
+
+  .c-button__icon {
+    fill: $color-text-button-brand;
+  }
+
+  &:hover,
+  &:focus {
+    .c-button__icon {
+      fill: $color-text-button-brand;
+    }
+  }
+}
+
+/// Button icon container sizing
+.c-button--icon-small {
+  @include square($square-icon-small-boundary);
+  border-radius: $border-radius-small;
+}
+
+.c-button--icon-x-small {
+  @include square($square-icon-x-small-boundary);
+  border-radius: $border-radius-small;
+  line-height: $line-height-reset;
+
+  .c-button__icon {
+    @include square($square-icon-small-content);
+  }
+}
+
+.c-button--icon-xx-small {
+  @include square($square-icon-xx-small-boundary);
+  border-radius: $border-radius-small;
+  line-height: $line-height-reset;
+
+  .c-button__icon {
+    @include square($square-icon-x-small-content);
+  }
+}
+
+/// Sizing for icon that sits inside button--icon
+.c-button__icon { /// This is the inside icon
+  @include square($square-icon-medium-content-alt);
+  fill: currentColor;
+
+  &--large {
+    @include square($square-icon-utility-large);
+  }
+
+  &--small {
+    @include square($square-icon-small-content);
+  }
+
+  &--x-small {
+    @include square($square-icon-x-small-content);
+  }
+}
+
+/// Button Icon Hint
+.c-button__icon--hint {
+  fill: $color-text-icon-default-hint;
+}
+
+.c-button__icon--inverse-hint {
+  fill: $color-text-icon-inverse-hint;
+}
+
+/// Apply hint parent to the parent of the button.
+.hint-parent {
+  .c-button--icon-border-inverse {
+    border-color: $color-border-icon-inverse-hint;
+
+    &:focus {
+      border-color: $color-border-icon-inverse-hint-hover;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    .c-button--icon-border-inverse {
+      border-color: $color-border-icon-inverse-hint-hover;
+    }
+
+    .c-button__icon--hint {
+      fill: $color-text-icon-default;
+    }
+
+    .c-button__icon--inverse-hint {
+      fill: $color-text-icon-inverse-hover;
+    }
+  }
+}

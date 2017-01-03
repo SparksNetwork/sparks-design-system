@@ -1,0 +1,46 @@
+/// ========================================================================
+/// UTILITIES TEXT SUBHEAD
+/// ========================================================================
+
+.u-text-subhead {
+  font-weight: $font-weight-regular;
+  font-size: $font-size-x-small-subhead;
+  line-height: $line-height-x-small-subhead;
+  letter-spacing: $letter-spacing-x-small-subhead;
+
+  @include mq-small-min {
+    font-size: $font-size-small-subhead;
+    line-height: $line-height-small-subhead;
+    letter-spacing: $letter-spacing-small-subhead;
+  }
+
+  @include mq-medium-min {
+    font-size: $font-size-medium-subhead;
+    line-height: $line-height-medium-subhead;
+    letter-spacing: $letter-spacing-medium-subhead;
+  }
+
+  @include mq-large-min {
+    font-size: $font-size-large-subhead;
+    line-height: $line-height-large-subhead;
+    letter-spacing: $letter-spacing-large-subhead;
+  }
+
+  @include mq-x-large-min {
+    font-size: $font-size-x-large-subhead;
+    line-height: $line-height-x-large-subhead;
+    letter-spacing: $letter-spacing-x-large-subhead;
+  }
+
+  @include mq-xx-large-min {
+    font-size: $font-size-xx-large-subhead;
+    line-height: $line-height-xx-large-subhead;
+    letter-spacing: $letter-spacing-xx-large-subhead;
+  }
+
+  @include mq-xxx-large-min {
+    font-size: $font-size-xxx-large-subhead;
+    line-height: $line-height-xxx-large-subhead;
+    letter-spacing: $letter-spacing-xxx-large-subhead;
+  }
+}

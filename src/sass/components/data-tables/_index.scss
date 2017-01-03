@@ -1,0 +1,28 @@
+/// ========================================================================
+/// COMPONENTS DATA TABLES
+/// ========================================================================
+
+.table {
+  background-color: $color-background-alt;
+
+  /// Cells
+  th,
+  td {
+    padding: $spacing-x-small;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  /// Table heading cells
+  th {
+    font-weight: $font-weight-regular;
+  }
+
+  /// Default table row hover
+  &:not(.no-row-hover) tbody tr:hover {
+    > td,
+    > th {
+      background-color: $color-background-row-hover;
+    }
+  }
+}

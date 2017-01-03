@@ -1,0 +1,34 @@
+/// ========================================================================
+/// CONFIG
+/// ========================================================================
+
+/// Version number
+$app-version: '1.0';
+
+/// Debug mode (uncomment to activate)
+/// Turn on to output deprecation warnings during development.
+$app-debug: true;
+
+/// Image path
+$static-image-path: '../images' !default;
+
+/// Font path
+$static-font-path: '../fonts/webfonts' !default;
+
+/// Load webfonts
+///
+/// The Design System loads Sparks webfonts using @font-face rules.
+/// Apps that already load webfonts or load webfonts using JavaScript
+/// should switch this setting off.
+$load-webfonts: true !default;
+
+/// Breakpoints
+$breakpoints: (
+  'x-small': $mq-x-small,
+  'small': $mq-small,
+  'medium': $mq-medium,
+  'large': $mq-large
+) !default;
+
+/// Grid column support
+$grid-columns: (1, 2, 3, 4, 5, 6, 7, 8, 12) !default;
